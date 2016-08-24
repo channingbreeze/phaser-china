@@ -1,0 +1,5 @@
+(function($) {
+	
+	Sunlight.highlightAll();
+	
+})(jQuery);

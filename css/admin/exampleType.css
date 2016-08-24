@@ -1,0 +1,27 @@
+.middleDiv .title {
+	font-size: 40px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.middleDiv .title a {
+	font-size: 16px;
+}
+.middleDiv .form {
+	margin-top: 20px;
+}
+.middleDiv .form .line {
+	width: 100%;
+	margin-top: 10px;
+}
+.middleDiv .form .line span {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	vertical-align: top;
+}
+.middleDiv table {
+	width: 100%;
+}
+.middleDiv table th {
+	text-align: left;
+}

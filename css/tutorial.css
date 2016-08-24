@@ -1,0 +1,71 @@
+.middleDiv .tutorials {
+	margin-top: 100px;
+}
+.middleDiv .tutorials li {
+	width: 100%;
+	height: 175px;
+	border-radius: 50px;
+	border: 2px solid #CECECE;
+	margin: 0px auto;
+	margin-top: 30px;
+	transition: all 0.5s linear 0s;
+}
+.middleDiv .tutorials li:hover {
+	background-color: #CECECE;
+	cursor: pointer;
+}
+.middleDiv .tutorials li img {
+	width: 240px;
+	height: 135px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+	box-shadow: 10px 10px 20px black;
+}
+.middleDiv .tutorials li .info {
+	float: left;
+	width: 700px;
+	margin-left: 40px;
+}
+.middleDiv .tutorials li .info .title {
+	margin-top: 10px;
+	font-size: 40px;
+}
+.middleDiv .tutorials li .info .authorInfo {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.middleDiv .tutorials li .info .abstract {
+	margin-top: 10px;
+	text-indent: 32px;
+	font-size: 16px;
+	width: 100%;
+	line-height: 20px;
+}
+
+.middleDiv .pag {
+	text-align: center;
+}
+.middleDiv .pag ul {
+	display: inline-block;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+.middleDiv .pag li {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #EDEDED;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.middleDiv .pag li.cur {
+	background-color: #FFE0B4;
+}
+.middleDiv .pag li.clickable {
+	background-color: #C9EDFF;
+	cursor: pointer;
+}

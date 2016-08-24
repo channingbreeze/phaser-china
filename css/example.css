@@ -1,0 +1,99 @@
+.middleDiv .exampleTitle {
+	width: 100%;
+	height: 150px;
+}
+.middleDiv .exampleTitle .title {
+	font-size: 35px;
+	padding-top: 45px;
+	font-family : 'big_bottom_cartoonregular';
+	text-shadow : 0 0 20px red;
+}
+
+.middleDiv .leftDiv {
+	width: 200px;
+	float: left;
+}
+.middleDiv .leftDiv ul {
+	
+}
+.middleDiv .leftDiv ul li {
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	border-radius: 10px;
+	text-indent: 10px;
+	background-color: black;
+	color: white;
+}
+.middleDiv .leftDiv ul li:hover {
+	cursor: pointer;
+	background-color: pink;
+	color: black;
+}
+.middleDiv .leftDiv ul li .exampleCategory {
+	padding-left: 3px;
+}
+.middleDiv .leftDiv ul li .exampleNum {
+	position: absolute;
+	right: 5px;
+	background-color: red;
+	text-align: center;
+	text-indent: 0px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.middleDiv .rightDiv {
+	width: 800px;
+	float: left;
+}
+.middleDiv .rightDiv ul {
+	width: 750px;
+	margin: 0px auto;
+}
+.middleDiv .rightDiv ul li {
+	width: 200px;
+	margin: 25px;
+	height: 200px;
+	float: left;
+	box-shadow: 10px 10px 20px black;
+	position: relative;
+	overflow: hidden;
+}
+.middleDiv .rightDiv ul li:hover {
+	cursor: pointer;
+}
+.middleDiv .rightDiv ul li img {
+	width: 200px;
+	height: 150px;
+}
+.middleDiv .rightDiv ul li .name {
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 50px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.middleDiv .rightDiv ul li .discription {
+	position: absolute;
+	top: -150px;
+	left: 0px;
+	width: 160px;
+	height: 110px;
+	background-color: #3B033B;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding: 20px;
+	transition: all 0.2s linear 0s;
+}
+.middleDiv .rightDiv ul li:hover .discription {
+	top: 0px;
+}

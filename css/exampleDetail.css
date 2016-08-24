@@ -1,0 +1,64 @@
+.middleDiv .exampleTitle {
+	width: 100%;
+	height: 150px;
+}
+.middleDiv .exampleTitle .titleWrap {
+	padding-top: 25px;
+}
+.middleDiv .exampleTitle .titleWrap .title {
+	font-size: 35px;
+	font-family : 'big_bottom_cartoonregular';
+	text-shadow : 0 0 20px red;
+}
+.middleDiv .exampleTitle .titleWrap .subtitle {
+	font-size: 20px;
+	display: inline-block;
+	text-indent: 20px;
+}
+.middleDiv .gameWrapper {
+	width: 1000px;
+	height: 680px;
+	background-color: black;
+	position: relative;
+	border-radius: 50px;
+}
+.middleDiv .gameWrapper .game {
+	width: 800px;
+	height: 600px;
+	margin: 0px auto;
+	position: relative;
+	top: 40px;
+}
+.middleDiv .gameWrapper .phaser {
+	color: white;
+	position: absolute;
+	top: 310px;
+	right: 10px;
+	font-size: 40px;
+	transform: rotate(90deg);
+}
+.middleDiv .gameWrapper .copyright {
+	color: white;
+	position: absolute;
+	top: 330px;
+	left: -105px;
+	font-size: 12px;
+	transform: rotate(90deg);
+}
+.middleDiv .source {
+	width: 1000px;
+	margin: 0px auto;
+	word-wrap: break-word;
+	margin-top: 40px;
+}
+.middleDiv .explain {
+	margin-top: 40px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 50px;
+	line-height: 25px;
+}
+.middleDiv .explain p {
+	text-indent: 36px;
+	margin-top: 10px;
+}

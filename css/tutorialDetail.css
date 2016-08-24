@@ -1,0 +1,51 @@
+.middleDiv .title {
+	font-size: 40px;
+	text-align: center;
+}
+.middleDiv .headInfo {
+	height: 150px;
+	width: 800px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+.middleDiv .headInfo img {
+	border-radius: 40px;
+	float: left;
+}
+.middleDiv .headInfo .rightDiv {
+	float: left;
+	width: 540px;
+	margin-left: 20px;
+}
+.middleDiv .headInfo .rightDiv .author {
+	margin-top: 10px;
+	
+}
+.middleDiv .headInfo .rightDiv .date {
+	margin-top: 10px;
+}
+.middleDiv .headInfo .rightDiv .abstract {
+	margin-top: 10px;
+	text-indent: 32px;
+	line-height: 25px;
+}
+.middleDiv .content {
+	border-top: 1px solid gray;
+	width: 800px;
+	margin: 0px auto;
+	padding-top: 10px;
+	line-height: 30px;
+}
+.middleDiv .content p {
+	text-indent: 32px;
+}
+.middleDiv .content pre {
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #EDEDED;
+	border-radius: 10px;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 14px;
+	line-height: 20px;
+}

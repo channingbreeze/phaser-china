@@ -1,0 +1,188 @@
+body {
+	background: url('../images/background.jpg');
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #3B033B;
+}
+
+header .mainHead {
+	width: 1000px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+header .mainHead .menu {
+	width: 450px;
+	height: 100%;
+}
+
+header .mainHead .menu li {
+	float: left;
+	width: 100px;
+	height: 100%;
+	margin-left: 25px;
+	margin-right: 25px;
+	transition : all 0.2s linear 0s;
+	border-radius: 50px;
+}
+
+header .mainHead .menu li a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+}
+
+header .mainHead .menu li a:hover {
+	text-decoration: none;
+}
+
+header .mainHead .menu li:hover {
+	background-color: black;
+}
+
+header .mainHead .middleItem {
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+}
+
+header .mainHead .middleItem a {
+	width: 100%;
+	height: 100%;
+	background-color: #3B033B;
+	display: inline-block;
+	border-radius: 50%;
+	margin-left: -50%;
+	transition : all 0.2s linear 0s;
+}
+
+header .mainHead .middleItem a:hover {
+	background-color: black;
+}
+
+header .mainHead .middleItem a.logoPng {
+	background: url("../images/logo.png") no-repeat;
+	background-size: 60px 85px;
+	background-position: 20px 8px;
+	background-color: #3B033B;
+}
+header .mainHead .middleItem a.logoPng:hover {
+	background-color: black;
+}
+
+.middleDiv {
+	width: 1000px;
+	min-height: 400px;
+	margin: 0px auto;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #B2B2B2;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+}
+footer p span {
+    font-family: 'Arial';
+}
+
+.bottomFix {
+	position: fixed;
+	z-index: 1;
+	bottom: 100px;
+	right: 10px;
+	width: 40px;
+	height: 80px;
+}
+.bottomFix .smallLogo {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+.bottomFix .qq {
+	background: url("../images/fixed.jpg") 0px -120px no-repeat; 
+}
+.bottomFix .qq:hover {
+	background: url("../images/fixed.jpg") 0px -80px no-repeat; 
+}
+.bottomFix .weixin {
+	background: url("../images/fixed.jpg") 0px -40px no-repeat; 
+}
+.bottomFix .weixin:hover {
+	background: url("../images/fixed.jpg") 0px 0px no-repeat; 
+}
+.bottomFix .smallLogo .popup:before {
+	content: "";
+    left: 200px;
+    top: 90px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid white;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+}
+.bottomFix .smallLogo .popup {
+	display: none;
+	position: absolute;
+	left: -210px;
+	top: -80px;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	background-color: white;
+}
+.bottomFix .smallLogo:hover .popup {
+	display: block;
+}
+.bottomFix .smallLogo .popup .title {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+.bottomFix .smallLogo .popup .qqNumber {
+	font-size: 12px;
+	color: gray;
+	text-align: center;
+	margin-top: 5px;
+}
+.bottomFix .smallLogo .popup .qrcode {
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+.bottomFix .smallLogo .popup .qqQrcode {
+	background: url("../images/fixed.jpg") -200px 0px no-repeat; 
+}
+.bottomFix .smallLogo .popup .weixinQrcode {
+	background: url("../images/fixed.jpg") -40px 0px no-repeat; 
+}
+
+@font-face {
+    font-family: 'big_bottom_cartoonregular';
+    src: url('fonts/big_bottom_typeface_normal-webfont.eot');
+    src: url('fonts/big_bottom_typeface_normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/big_bottom_typeface_normal-webfont.woff2') format('woff2'),
+         url('fonts/big_bottom_typeface_normal-webfont.woff') format('woff'),
+         url('fonts/big_bottom_typeface_normal-webfont.ttf') format('truetype'),
+         url('fonts/big_bottom_typeface_normal-webfont.svg#big_bottom_cartoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

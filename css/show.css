@@ -1,0 +1,55 @@
+.middleDiv .shows {
+	width: 100%;
+	float: left;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.middleDiv .shows li {
+	width: 220px;
+	height: 220px;
+	margin: 15px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.middleDiv .shows li image {
+	width: 220px;
+	height: 220px;
+}
+.middleDiv .shows li .front {
+	width: 100%;
+	height: 100%;
+}
+.middleDiv .shows li .back {
+	position: absolute;
+	left: 0px;
+	top: 220px;
+	width: 200px;
+	height: 200px;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+.middleDiv .shows li .front,
+.middleDiv .shows li .back {
+	transition : all 0.2s linear 0s;
+}
+.middleDiv .shows li:hover .front {
+	opacity: 0.0;
+}
+.middleDiv .shows li:hover .back {
+	top: 0px;
+}
+.middleDiv .shows li .back .name {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+}
+.middleDiv .shows li .back .author,
+.middleDiv .shows li .back .desc,
+.middleDiv .shows li .back .play {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #434343;
+}

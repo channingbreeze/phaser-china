@@ -1,0 +1,52 @@
+.writeNewsTitle {
+	margin: 20px;
+}
+.newsInfo {
+	margin-left: 20px;
+}
+.newsInfo .line {
+	height: 30px;
+}
+.newsInfo .line .title {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+.newsInfo .line input[type="text"] {
+	width: 200px;
+}
+
+.newsInfo .line input[type="file"] {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+.newsInfo .line button {
+	padding: 2px;
+	margin-right: 10px;
+}
+.writeNewsEditor {
+	width: 96%;
+	margin: 10px auto;
+}
+.writeNewsBtn {
+	margin-left: 20px;
+	padding: 2px;
+}
+
+.middlediv .content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.middleDiv .content .rightDiv {
+	width: 780px;
+	background-color: white;
+	float: right;
+	padding: 10px;
+	min-height: 500px;
+}
+
+.middleDiv .content .rightDiv p {
+	text-indent: 32px;
+	line-height: 25px;
+}

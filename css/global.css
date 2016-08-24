@@ -1,0 +1,53 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.mgbt30 {
+	margin-bottom: 30px;
+}
+
+.h300 {
+	height: 300px;
+}
+
+.h100 {
+	height: 100px;
+}
+.h80 {
+	height: 80px;
+}
+.h10 {
+	height: 10px;
+}
+
+.center {
+	text-align: center;
+}
