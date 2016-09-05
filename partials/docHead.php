@@ -20,7 +20,7 @@ if(isset($subdir)) {
 		<div class="middleDiv">
 			<div class="tips">
 				如果你的英语过了四级，请看：
-				<a href="<?php echo $path;?>docs/index.html" target="_blank">英文原版</a>
+				<a href="<?php echo $path;?>docs/Index.html" target="_blank">英文原版</a>
 			</div>
 		</div>
 	</div>
