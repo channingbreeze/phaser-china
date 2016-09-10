@@ -31,7 +31,7 @@ $tutorial = $tutorial[0];
 		<div class="h100"></div>
 		<div class="title"><?php echo $tutorial['title'];?></div>
 		<div class="headInfo">
-			<img src="http://localhost/phaser-china/uploads/996c7debc2862e50927077bb84ab0fb013bffbfe.jpg" />
+			<img src="<?php echo $tutorial['pic'];?>" />
 			<div class="rightDiv">
 				<div class="author">作者：<?php echo $tutorial['author'];?></div>
 				<div class="date">日期：<?php $time = explode(' ', $tutorial['gmt_create']); echo $time[0];?></div>
