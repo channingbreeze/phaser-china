@@ -7,6 +7,10 @@ $(function() {
 		dots: true
 	});
 	
+	$("#downloadExample").on('click', function() {
+		window.location.href = "inter/downloadExample.php";
+	});
+	
 	$("#circles").find('li').on('click', function() {
 		$this = $(this);
 		window.location.href = $this.data('href');

@@ -2,20 +2,20 @@
 	position: relative;
 }
 .banner .i1 {
-	background-color: #769CFF;
+	background-color: #F3961F;
 }
 .banner .i2 {
-	background-color: #86FF89;
+	background-color: #C52A4C;
 }
 .banner .i3 {
-	background-color: #FFD881;
+	background-color: #F65382;
 }
 .banner .dots {
 	position: absolute;
 	z-index: 1;
 	bottom: 10px;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -50px;
 }
 .banner .dots .dot {
 	width: 15px;
@@ -23,11 +23,11 @@
 	float: left;
 	margin-left: 15px;
 	border-radius: 50%;
-	border: 1px solid gray;
+	border: 1px solid white;
 	cursor: pointer;
 }
 .banner .dots .active {
-	background-color : gray;
+	background-color : white;
 }
 .banner .inner {
 	width: 1000px;
@@ -54,12 +54,26 @@
 	height: 100%;
 	border-radius: 50%;
 	transition : all 0.2s linear 0s;
-	line-height: 200px;
 	text-align: center;
 	cursor: pointer;
 }
 .middleDiv .introduce li .front {
-	font-size: 50px;
+	color: white;
+}
+.middleDiv .introduce li .front img {
+	width: 60px;
+	margin-top: 25px;
+}
+.middleDiv .introduce li .front .examIcon {
+	margin-top: 35px;
+}
+.middleDiv .introduce li .front .chinese {
+	font-size: 28px;
+	margin-top: 8px;
+}
+.middleDiv .introduce li .front .english {
+	font-size: 14px;
+	margin-top: 5px;
 }
 .middleDiv .introduce li .back {
 	opacity: 0;
@@ -67,6 +81,24 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+.middleDiv .introduce li .back .icon {
+	position: absolute;
+	background: url("../images/icons/exam-back.png") no-repeat 8px 7px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	top: 5px;
+	left: 150px;
+}
+.middleDiv .introduce li .back .i1 {
+	background-color: #F3961F;
+}
+.middleDiv .introduce li .back .i2 {
+	background-color: #F3961F;
+}
+.middleDiv .introduce li .back .i3 {
+	background-color: #F3961F;
 }
 .middleDiv .introduce li:hover .front {
 	opacity: 0;
@@ -77,34 +109,34 @@
 	transform: rotateY(0deg);
 }
 .middleDiv .introduce li .f1 {
-	background-color: #0046FF;
-	border: 5px solid #0046FF;
+	background-color: #F3961F;
+	border: 5px solid #F3961F;
 	color: white;
 }
 .middleDiv .introduce li .b1 {
 	background-color: #FFFFFF;
-	border: 5px solid #0046FF;
-	color: #0046FF;
+	border: 5px solid #F3961F;
+	color: #F3961F;
 }
 .middleDiv .introduce li .f2 {
-	background-color: #1CD11F;
-	border: 5px solid #1CD11F;
+	background-color: #F3961F;
+	border: 5px solid #F3961F;
 	color: white;
 }
 .middleDiv .introduce li .b2 {
 	background-color: #FFFFFF;
-	border: 5px solid #1CD11F;
-	color: #1CD11F;
+	border: 5px solid #F3961F;
+	color: #F3961F;
 }
 .middleDiv .introduce li .f3 {
-	background-color: #ED7103;
-	border: 5px solid #ED7103;
+	background-color: #F3961F;
+	border: 5px solid #F3961F;
 	color: white;
 }
 .middleDiv .introduce li .b3 {
 	background-color: #FFFFFF;
-	border: 5px solid #ED7103;
-	color: #ED7103;
+	border: 5px solid #F3961F;
+	color: #F3961F;
 }
 .middleDiv .introduce li p {
 	font-weight: bold;

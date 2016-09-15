@@ -1,3 +1,7 @@
+* {
+	font-family: "Microsoft YaHei";
+}
+
 body {
 	background: url('../images/background.jpg');
 }
@@ -5,7 +9,7 @@ body {
 header {
 	width: 100%;
 	height: 60px;
-	background-color: #3B033B;
+	background-color: black;
 }
 
 header .mainHead {
@@ -45,7 +49,7 @@ header .mainHead .menu li a:hover {
 }
 
 header .mainHead .menu li:hover {
-	background-color: black;
+	background-color: #3B033B;
 }
 
 header .mainHead .middleItem {
@@ -60,7 +64,7 @@ header .mainHead .middleItem {
 header .mainHead .middleItem a {
 	width: 100%;
 	height: 100%;
-	background-color: #3B033B;
+	background-color: black;
 	display: inline-block;
 	border-radius: 50%;
 	margin-left: -50%;
@@ -68,17 +72,17 @@ header .mainHead .middleItem a {
 }
 
 header .mainHead .middleItem a:hover {
-	background-color: black;
+	background-color: #3B033B;
 }
 
 header .mainHead .middleItem a.logoPng {
 	background: url("../images/logo.png") no-repeat;
 	background-size: 60px 85px;
 	background-position: 20px 8px;
-	background-color: #3B033B;
+	background-color: black;
 }
 header .mainHead .middleItem a.logoPng:hover {
-	background-color: black;
+	background-color: #3B033B;
 }
 
 .middleDiv {
@@ -169,6 +173,7 @@ footer p span {
 	margin-left: 20px;
 }
 .bottomFix .smallLogo .popup .qqQrcode {
+	margin-top: -10px;
 	background: url("../images/fixed.jpg") -200px 0px no-repeat; 
 }
 .bottomFix .smallLogo .popup .weixinQrcode {

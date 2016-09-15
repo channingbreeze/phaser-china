@@ -33,7 +33,7 @@
 	color: white;
 	position: absolute;
 	top: 310px;
-	right: 10px;
+	right: -10px;
 	font-size: 40px;
 	transform: rotate(90deg);
 }

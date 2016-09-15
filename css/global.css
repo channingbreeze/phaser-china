@@ -51,3 +51,7 @@ a:hover {
 .center {
 	text-align: center;
 }
+
+.hand {
+	cursor: pointer;
+}

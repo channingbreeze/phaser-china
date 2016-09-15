@@ -102,7 +102,7 @@
 			};
 
 			//  Dot pagination
-			o.dots && nav('dot');
+			o.dots && _.li.length>1 && nav('dot');
 
 			//  Arrows support
 			o.arrows && nav('arrow');
