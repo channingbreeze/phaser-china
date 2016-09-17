@@ -2,9 +2,7 @@
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create });
 
 function preload() {
-
     game.load.atlas('atlas', 'assets/pics/texturepacker_test.png', 'assets/pics/texturepacker_test.json');
-
 }
 
 var chick;
@@ -14,11 +12,8 @@ var cop;
 var text;
 
 function create() {
-
     game.stage.backgroundColor = '#404040';
-
-    //  This demonstrates pixel perfect click detection even if using sprites in a texture atlas.
-
+    // 即使被拉伸的图像，在精确像素点击的情况下，还是能捕获
     chick = game.add.sprite(64, 64, 'atlas');
     chick.frameName = 'budbrain_chick.png';
     chick.inputEnabled = true;
@@ -48,11 +43,8 @@ function create() {
     mech.scale.set(1.5, 1);
 
     text = game.add.text(16, 16, 'Click a sprite', { fill: '#ffffff' });
-
 }
 
 function clicked(sprite) {
-
     text.text = 'You clicked ' + sprite.frameName;
-
 }

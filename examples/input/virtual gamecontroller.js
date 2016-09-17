@@ -1,12 +1,7 @@
+
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update:update,render:render });
 
-
-/*
-    virtual gamecontroller with phaser.js
-    buttons, sprite(sheet)s (animation) and code of this example by valueerror - mario by nintendo ;-)
-*/
-
-//some global vars 
+// 一些全局变量
 var fireballs;
 var fireRate = 300;
 var nextFire = 0;
@@ -18,59 +13,62 @@ var duck= false;
 var fire=false;
 var jump=false;
 
-
-
 function preload() {
-    //spritesheet for animations
-    game.load.spritesheet('mario', 'assets/misc/mariospritesheet-small.png',50,50); // key, sourcefile, framesize x, framesize y
-    //background, ground, fireball images
+    // 精灵
+    game.load.spritesheet('mario', 'assets/misc/mariospritesheet-small.png', 50, 50);
+    // 一些图片素材
     game.load.image('ground', 'assets/misc/2048x48-ground.png');
     game.load.image('clouds', 'assets/misc/clouds.jpg');
     game.load.image('fireball', 'assets/misc/fireball.png',40,30);
-    //gamepad buttons
+    // 按钮
     game.load.spritesheet('buttonvertical', 'assets/buttons/buttons-big/button-vertical.png',64,64);
     game.load.spritesheet('buttonhorizontal', 'assets/buttons/buttons-big/button-horizontal.png',96,64);
     game.load.spritesheet('buttondiagonal', 'assets/buttons/buttons-big/button-diagonal.png',64,64);
     game.load.spritesheet('buttonfire', 'assets/buttons/buttons-big/button-round-a.png',96,96);
     game.load.spritesheet('buttonjump', 'assets/buttons/buttons-big/button-round-b.png',96,96);
-    // fullscreen setup
+    // 全屏
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
 }
 
 function create() {
-    if (!game.device.desktop){ game.input.onDown.add(gofull, this); } //go fullscreen on mobile devices
-    
-    game.physics.startSystem(Phaser.Physics.P2JS);  //activate physics
-    game.physics.p2.gravity.y = 1200;  //realistic gravity
-    game.world.setBounds(0, 0, 2000, 600);//(x, y, width, height)
-    game.physics.p2.setBoundsToWorld(true, true, false, true, false); //(left, right, top, bottom, setCollisionGroup)
-    game.physics.p2.friction = 5;   // default friction between ground and player or fireballs
-
-    clouds = game.add.tileSprite(0, 0, 2048, 600, 'clouds'); //add tiling sprite to cover the whole game world
-    ground = game.add.sprite(game.world.width/2, game.world.height-24,'ground');
-    game.physics.p2.enable(ground);  //enable physics so our player will not fall through ground but collide with it
-    ground.body.static=true;    // ground should not move
-
-    fireballs = game.add.group();  // add a new group for fireballs
-    fireballs.createMultiple(500, 'fireball', 0, false);  // create plenty of them hidden and out of the game world
-
-    //setup our player
-    player = game.add.sprite(350, game.world.height - 150, 'mario'); //create and position player
+	// 在移动设备上全屏
+    if (!game.device.desktop){ game.input.onDown.add(gofull, this); }
+    // 开启物理系统
+    game.physics.startSystem(Phaser.Physics.P2JS);
+    game.physics.p2.gravity.y = 1200;
+    game.world.setBounds(0, 0, 2000, 600);
+    // 左边，右边，上边，下边，碰撞检测
+    game.physics.p2.setBoundsToWorld(true, true, false, true, false);
+    // 摩擦
+    game.physics.p2.friction = 5; 
+    clouds = game.add.tileSprite(0, 0, 2048, 600, 'clouds');
+    ground = game.add.sprite(game.world.width/2, game.world.height-24, 'ground');
+    game.physics.p2.enable(ground);
+    // ground需要静止
+    ground.body.static = true;
+    // 子弹的group
+    fireballs = game.add.group();
+    fireballs.createMultiple(500, 'fireball', 0, false);
+    // player
+    player = game.add.sprite(350, game.world.height - 150, 'mario');
     game.physics.p2.enable(player);
-    player.body.setCircle(22);  // collision circle 
-    player.body.fixedRotation=true; // do not rotate on collision
+    player.body.setCircle(22);
+    // 不旋转
+    player.body.fixedRotation=true;
     player.body.mass = 4;
-
-    // add some animations 
-    player.animations.add('walk', [1,2,3,4], 10, true);  // (key, framesarray, fps,repeat)
+    // 增加一些动画
+    // key, framesarray, fps,repeat
+    player.animations.add('walk', [1,2,3,4], 10, true);
     player.animations.add('duck', [11], 0, true);
     player.animations.add('duckwalk', [10,11,12], 3, true);
-    game.camera.follow(player); //always center player
-
-    // create our virtual game controller buttons 
-    buttonjump = game.add.button(600, 500, 'buttonjump', null, this, 0, 1, 0, 1);  //game, x, y, key, callback, callbackContext, overFrame, outFrame, downFrame, upFrame
-    buttonjump.fixedToCamera = true;  //our buttons should stay on the same place  
+    // 相机跟随player
+    game.camera.follow(player);
+    // 创建虚拟按键
+    //game, x, y, key, callback, callbackContext, overFrame, outFrame, downFrame, upFrame
+    buttonjump = game.add.button(600, 500, 'buttonjump', null, this, 0, 1, 0, 1);
+    // 相对相机固定
+    buttonjump.fixedToCamera = true;
     buttonjump.events.onInputOver.add(function(){jump=true;});
     buttonjump.events.onInputOut.add(function(){jump=false;});
     buttonjump.events.onInputDown.add(function(){jump=true;});
@@ -120,48 +118,49 @@ function create() {
 };
 
 function update() {
-    // define what should happen when a button is pressed
+    // 按键的逻辑实现
     if (left && !duck) {
         player.scale.x = -1;
         player.body.moveLeft(500);
         player.animations.play('walk');
-    }
-    else if (right && !duck) {
+    } else if (right && !duck) {
         player.scale.x = 1;
         player.body.moveRight(500);
         player.animations.play('walk');
-    } 
-    else if (duck && !left && !right) {
+    } else if (duck && !left && !right) {
         player.body.velocity.x=0;
         player.animations.play('duck');
-    } 
-    else if (duck && right) {
+    } else if (duck && right) {
         player.scale.x = 1;
         player.body.moveRight(200);
         player.animations.play('duckwalk');
-    }
-    else if (duck && left) {
+    } else if (duck && left) {
         player.scale.x = -1;
         player.body.moveLeft(200);
         player.animations.play('duckwalk');
-    }
-    else {
+    } else {
         player.loadTexture('mario', 0);
     }
-    if (jump){ jump_now(); player.loadTexture('mario', 5);}  //change to another frame of the spritesheet
+    // 换成另外一种贴图
+    if (jump){ jump_now(); player.loadTexture('mario', 5);}
     if (fire){fire_now(); player.loadTexture('mario', 8); }
-    if (duck){ player.body.setCircle(16,0,6);}else{ player.body.setCircle(22);}  //when ducking create a smaller hitarea - (radius,offsetx,offsety)
-    if (game.input.currentPointers == 0 && !game.input.activePointer.isMouse){ fire=false; right=false; left=false; duck=false; jump=false;} //this works around a "bug" where a button gets stuck in pressed state
+    // 蹲下的时候，设置另外一个大小
+    // radius,offsetx,offsety
+    if (duck){ player.body.setCircle(16,0,6);}else{ player.body.setCircle(22);}
+    // this works around a "bug" where a button gets stuck in pressed state
+    if (game.input.currentPointers == 0 && !game.input.activePointer.isMouse){ 
+    	fire=false; right=false; left=false; duck=false; jump=false;
+    }
 };
 
 function render(){
     game.debug.text('jump:' + jump + ' duck:' + duck + ' left:' + left + ' right:' + right + ' fire:' + fire, 20, 20);
 }
 
-
-//some useful functions
+// some useful functions
 function gofull() { game.scale.startFullScreen(false);}
-function jump_now(){  //jump with small delay
+// jump with small delay
+function jump_now(){ 
     if (game.time.now > nextJump ){
         player.body.moveUp(600);
         nextJump = game.time.now + 900;
@@ -170,16 +169,20 @@ function jump_now(){  //jump with small delay
 function fire_now() {
     if (game.time.now > nextFire){
         nextFire = game.time.now + fireRate;
-        var fireball = fireballs.getFirstExists(false); // get the first created fireball that no exists atm
-        if (fireball){
-            fireball.exists = true;  // come to existance !
-            fireball.lifespan=2500;  // remove the fireball after 2500 milliseconds - back to non-existance
-            if(player.scale.x == -1){  // if player looks to the left - create the fireball on his left side
+        // get the first created fireball that no exists atm
+        var fireball = fireballs.getFirstExists(false); 
+        if (fireball) {
+        	// come to existance !
+            fireball.exists = true;
+            // remove the fireball after 2500 milliseconds - back to non-existance
+            fireball.lifespan=2500;
+            // if player looks to the left - create the fireball on his left side
+            if(player.scale.x == -1) {
                 fireball.reset(player.x-20, player.y);
                 game.physics.p2.enable(fireball);
                 fireball.body.moveLeft(800);
                 fireball.body.moveDown(180);
-            }else{
+            } else {
                 fireball.reset(player.x+20, player.y);
                 game.physics.p2.enable(fireball);
                 fireball.body.moveRight(800);
