@@ -13,11 +13,14 @@ var p;
 var cursors;
 
 function create() {
-    game.stage.backgroundColor = '#787878';
     map = game.add.tilemap('mario');
+    // 此处的SuperMarioBros-World1-1与json中tilesets的name对应
     map.addTilesetImage('SuperMarioBros-World1-1', 'tiles');
+    // 此处与json中layer的name对应
     layer = map.createLayer('World1');
+    // resizeWorld会根据tilemap重新设置world的大小
     layer.resizeWorld();
+    // wrap为true会填充整个区域
     layer.wrap = true;
     cursors = game.input.keyboard.createCursorKeys();
 }

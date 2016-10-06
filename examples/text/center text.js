@@ -17,6 +17,6 @@ function create() {
     var style = { font: "bold 32px Arial", fill: "#fff", boundsAlignH: "center", boundsAlignV: "middle" };
     text = game.add.text(0, 0, "phaser 2.4 text bounds", style);
     text.setShadow(3, 3, 'rgba(0,0,0,0.5)', 2);
-    // x:0 y:0 width:800 height:100
+    // x:0 y:100 width:800 height:100
     text.setTextBounds(0, 100, 800, 100);
 }

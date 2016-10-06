@@ -5,7 +5,7 @@ function preload() {
 
     game.load.image('lazur', 'assets/pics/thorn_lazur.png');
     game.load.spritesheet('mummy', 'assets/sprites/metalslug_mummy37x45.png', 37, 45, 18);
-
+    
 }
 
 var back;

@@ -32,7 +32,7 @@ function create() {
     player.animations.add('up', [11,12,13], 10, true);
     player.animations.add('down', [4,5,6], 10, true);
     game.physics.enable(player, Phaser.Physics.ARCADE);
-    // 碰撞size
+    // 碰撞size(width, height, offsetX, offsetY)
     player.body.setSize(10, 14, 2, 1);
     game.camera.follow(player);
     cursors = game.input.keyboard.createCursorKeys();

@@ -9,7 +9,7 @@ WebFontConfig = {
 };
 
 function preload() {
-    game.load.script('webfont', 'http://localhost/phaser-china/assets/text/webfont.js');
+    game.load.script('webfont', 'assets/text/webfont.js');
 }
 
 var text = null;

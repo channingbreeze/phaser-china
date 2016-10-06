@@ -1,5 +1,5 @@
 
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
 
 function preload() {
     game.load.tilemap('mario', 'assets/tilemaps/maps/super_mario.json', null, Phaser.Tilemap.TILED_JSON);
@@ -18,14 +18,14 @@ function create() {
     game.stage.backgroundColor = '#787878';
     map = game.add.tilemap('mario');
     map.addTilesetImage('SuperMarioBros-World1-1', 'tiles');
-	map.setCollisionBetween(14, 15);
-    map.setCollisionBetween(15, 16);
+	// 设置碰撞，setCollisionBetween(13, 17)是编号从13到17的tile都设置碰撞
+    map.setCollisionBetween(13, 17);
     map.setCollisionBetween(20, 25);
     map.setCollisionBetween(27, 29);
     map.setCollision(40);
     // layer
     layer = map.createLayer('World1');
-    layer.debug = true;
+    //layer.debug = true;
     layer.resizeWorld();
     // player
     p = game.add.sprite(32, 32, 'player');
@@ -43,6 +43,7 @@ function update() {
     game.physics.arcade.collide(p, layer);
     p.body.velocity.x = 0;
     if (cursors.up.isDown) {
+    	// onFloor才能往上跳
         if (p.body.onFloor()) {
             p.body.velocity.y = -200;
         }
@@ -52,9 +53,4 @@ function update() {
     } else if (cursors.right.isDown) {
         p.body.velocity.x = 150;
     }
-}
-
-function render() {
-    //game.debug.body(p);
-    game.debug.bodyInfo(p, 32, 320);
 }

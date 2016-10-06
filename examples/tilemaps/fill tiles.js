@@ -38,9 +38,9 @@ function update() {
     sprite.body.velocity.x = 0;
     sprite.body.velocity.y = 0;
     sprite.body.angularVelocity = 0;
-    if (cursors.left.isDown){
+    if (cursors.left.isDown) {
         sprite.body.angularVelocity = -200;
-    }else if (cursors.right.isDown){
+    }else if (cursors.right.isDown) {
         sprite.body.angularVelocity = 200;
     }
     if (cursors.up.isDown){
