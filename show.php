@@ -35,7 +35,7 @@
 					<div class="play">玩法：鼠标或手指点击屏幕，控制小鸟往前飞，加油233</div>
 				</div>
 			</li>
-			<li  data-url="http://game.webxinxin.com/plane/">
+			<li data-url="http://game.webxinxin.com/plane/">
 				<div class="front">
 					<img src="images/show/show3.jpg"/>
 				</div>
@@ -46,7 +46,7 @@
 					<div class="play">玩法：鼠标或手指拖动飞机移动，还可以接子弹666</div>
 				</div>
 			</li>
-			<li  data-url="http://game.webxinxin.com/?game=weiduan&id=1">
+			<li data-url="http://game.webxinxin.com/?game=weiduan&id=1">
 				<div class="front">
 					<img src="images/show/show4.jpg"/>
 				</div>
@@ -57,7 +57,7 @@
 					<div class="play">玩法：打开看，然后，笑就行了233</div>
 				</div>
 			</li>
-			<li  data-url="http://game.webxinxin.com/fruit">
+			<li data-url="http://game.webxinxin.com/fruit">
 				<div class="front">
 					<img src="images/show/show5.jpg"/>
 				</div>
@@ -66,6 +66,17 @@
 					<div class="author">作者：channingbreeze</div>
 					<div class="desc">简介：实现水果忍者的基本功能，可扩展！</div>
 					<div class="play">玩法：用鼠标切水果，别漏了，也别切到炸弹</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/2048">
+				<div class="front">
+					<img src="images/show/show6.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">2048</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：2048标准版，可扩展</div>
+					<div class="play">玩法：可用鼠标滑动，也可用方向键</div>
 				</div>
 			</li>
 		</ul>
