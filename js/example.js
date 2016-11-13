@@ -18,7 +18,7 @@
 	var bindTypeEvents = function() {
 		$("#exams").find('li').on('click', function() {
 			$this = $(this);
-			refreshExam($this.data('id'), $this.data('name'));
+			window.location.href = "example-" + $this.data('id') + ".html";
 		});
 	}
 	
@@ -34,13 +34,17 @@
 		var id = $this.data('id');
 		if(id) {
 			var name = $this.data('name');
-			refreshExam(id, name);
+			window.location.href = "example-" + id + ".html";
 		} else {
 			$("#title").html("SELECT A CATEGORY");
-			refreshAll();
+			window.location.href = "example.html";
 		}
 	});
 	
-	refreshAll();
+	if(typeof(TYPE_ID) != 'undefined' && typeof(TYPE_NAME) != 'undefined') {
+		refreshExam(TYPE_ID, TYPE_NAME);
+	} else {
+		refreshAll();
+	}
 	
 })(jQuery);

@@ -11,6 +11,11 @@ foreach($exampleTypes as $exampleType) {
 	$totalCount = $totalCount + $exampleType['typecount'];
 }
 
+if(isset($_GET['id'])) {
+	$typeId = $_GET['id'];
+	$selectedType = $exampleTypeService->selectExampleTypeById($typeId);
+}
+
 ?>
 <!DOCTYPE html>
 <head>
@@ -45,6 +50,16 @@ foreach($exampleTypes as $exampleType) {
 			{{/each}}
 		</ul>
     </script>
+    <?php 
+    if(isset($selectedType)) {
+    ?>
+    <script>
+		var TYPE_ID = '<?php echo $selectedType[0]['id'];?>';
+		var TYPE_NAME = '<?php echo $selectedType[0]['typename'];?>';
+    </script>
+    <?php 
+    }
+    ?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>
