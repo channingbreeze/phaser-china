@@ -1,0 +1,33 @@
+
+square.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+body
+  rotate: true
+  xy: 2, 19
+  size: 30, 80
+  orig: 30, 80
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 2, 2
+  size: 15, 30
+  orig: 15, 30
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 101, 29
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 84, 19
+  size: 15, 30
+  orig: 15, 30
+  offset: 0, 0
+  index: -1
