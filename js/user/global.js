@@ -1,41 +1,36 @@
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
 
 function preload() {
-	// csv的tilemap
-	game.load.tilemap('map', 'assets/tilemaps/csv/catastrophi_level2.csv', null, Phaser.Tilemap.CSV);
-    game.load.image('tiles', 'assets/tilemaps/tiles/catastrophi_tiles_16.png');
+    game.load.image('phaser', 'assets/sprites/phaser-dude.png');
 }
 
-var map;
-var layer;
-var cursors;
+var sprite;
+
+var upKey;
+var downKey;
+var leftKey;
+var rightKey;
 
 function create() {
-	// 创建tilemap，指定每个tile的大小，16x16
-	map = game.add.tilemap('map', 16, 16);
-	// image添加上
-	map.addTilesetImage('tiles');
-	// layer
-	layer = map.createLayer(0);
-    layer.resizeWorld();
-    cursors = game.input.keyboard.createCursorKeys();
-    var help = game.add.text(16, 16, 'Arrows to scroll', { font: '14px Arial', fill: '#ffffff' });
-    help.fixedToCamera = true;
+    game.stage.backgroundColor = '#736357';
+    sprite = game.add.sprite(300, 300, 'phaser');
+    // 单独创建四个方向键
+    upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
+    downKey = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
+    leftKey = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
+    rightKey = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
 }
 
 function update() {
-    if (cursors.left.isDown) {
-        game.camera.x -= 4;
-    } else if (cursors.right.isDown) {
-        game.camera.x += 4;
+    if (upKey.isDown) {
+        sprite.y--;
+    } else if (downKey.isDown) {
+        sprite.y++;
     }
-    if (cursors.up.isDown) {
-        game.camera.y -= 4;
-    } else if (cursors.down.isDown) {
-        game.camera.y += 4;
+    if (leftKey.isDown) {
+        sprite.x--;
+    } else if (rightKey.isDown) {
+        sprite.x++;
     }
-}
-
-function render() {
 }
