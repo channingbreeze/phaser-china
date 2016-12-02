@@ -1,0 +1,67 @@
+.middleDiv .gameWrapper {
+	width: 1000px;
+	height: 680px;
+	background-color: black;
+	position: relative;
+	border-radius: 50px;
+	margin-top: 60px;
+}
+.middleDiv .gameWrapper .game {
+	width: 800px;
+	height: 600px;
+	margin: 0px auto;
+	position: relative;
+	top: 40px;
+}
+.middleDiv .gameWrapper .phaser {
+	color: white;
+	position: absolute;
+	top: 310px;
+	right: -10px;
+	font-size: 40px;
+	transform: rotate(90deg);
+}
+.middleDiv .gameWrapper .copyright {
+	color: white;
+	position: absolute;
+	top: 330px;
+	left: -105px;
+	font-size: 12px;
+	transform: rotate(90deg);
+}
+.middleDiv .buttonDiv {
+	width: 1000px;
+	height: 40px;
+}
+.middleDiv .buttonDiv button {
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	border: none;
+	background-color: #333333;
+	color: #DDDDDD;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	float: right;
+}
+.middleDiv .buttonDiv button:hover {
+	background-color: #000000;
+	color: #EEEEEE;
+}
+.middleDiv .editorWrapper {
+	width: 1000px;
+	height: 680px;
+	margin-top: 10px;
+}
+.middleDiv .editorWrapper .editor {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: none !important;
+}
+.middleDiv .editorWrapper .editor div,
+.middleDiv .editorWrapper .editor span {
+	font-family: none !important;
+}
+

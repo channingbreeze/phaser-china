@@ -45,11 +45,30 @@
 	font-size: 12px;
 	transform: rotate(90deg);
 }
+.middleDiv .buttonDiv {
+	width: 1000px;
+	height: 40px;
+}
+.middleDiv .buttonDiv button {
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	border: none;
+	background-color: #333333;
+	color: #DDDDDD;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	float: right;
+}
+.middleDiv .buttonDiv button:hover {
+	background-color: #000000;
+	color: #EEEEEE;
+}
 .middleDiv .source {
 	width: 1000px;
 	margin: 0px auto;
 	word-wrap: break-word;
-	margin-top: 40px;
 }
 .middleDiv .explain {
 	margin-top: 40px;

@@ -10,4 +10,9 @@
 		window.open(text, '_blank');
 	});
 	
+	$("#editBtn").on("click", function() {
+		$this = $(this);
+		window.location.href = "example-edit-" + $this.data("id") + ".html";
+	});
+	
 })(jQuery);

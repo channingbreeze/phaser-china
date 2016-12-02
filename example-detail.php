@@ -54,6 +54,9 @@ $exam = $exam[0];
 			<div class="phaser">PHASER</div>
 			<div class="copyright">Copyright © 2015 phaser-china.com All Rights Reserved</div>
 		</div>
+		<div class="buttonDiv">
+			<button id="editBtn" data-id="<?php echo $exam['id'];?>">编辑</button>
+		</div>
 		<div class="source">
 		<pre class="sunlight-highlight-javascript linenums">
 		<?php 
