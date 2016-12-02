@@ -25,7 +25,7 @@
 	}
 
 	function setValue() {
-	    require("ace/lib/net").get('js/user/global.js', function(t){
+	    require("ace/lib/net").get('js/user/global.js?now=' + new Date().getTime(), function(t){
 	        el.env.editor.setValue(t, 1);
 	    })
 	}
