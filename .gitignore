@@ -14,4 +14,4 @@ config
 .htaccess
 local
 test
-js/user/*
+js/user/

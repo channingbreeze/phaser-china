@@ -44,4 +44,51 @@
 	min-height: 800px;
 	float: left;
 	padding: 10px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.middleDiv .docDetailDiv a {
+	color: #4600EE;
+}
+.middleDiv .docDetailDiv a:hover {
+	color: #551A99;
+}
+.middleDiv .docDetailDiv .indent {
+	text-indent: 28px;
+}
+.middleDiv .docDetailDiv .indentS {
+	text-indent: 5px;
+}
+.middleDiv .docDetailDiv .keywords {
+	font-size: 17.5px;
+	line-height: 40px;
+	color: #551A99;
+}
+.middleDiv .docDetailDiv .source {
+	font-weight: bold;
+	line-height: 40px;
+}
+.middleDiv .docDetailDiv .title {
+	font-size: 31.5px;
+	line-height: 60px;
+	color: #551A99;
+}
+.middleDiv .docDetailDiv .subTitle {
+	line-height: 40px;
+	color: #551A99;
+}
+.middleDiv .docDetailDiv .params {
+	color: #DD5600;
+}
+.middleDiv .docDetailDiv .warning {
+	color: #FF0000;
+	font-weight: bold;
+}
+.middleDiv .docDetailDiv table td,
+.middleDiv .docDetailDiv table th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.middleDiv .docDetailDiv table td {
+	border-top: 1px solid gray;
 }
