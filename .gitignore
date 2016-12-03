@@ -14,3 +14,4 @@ config
 .htaccess
 local
 test
+js/user
