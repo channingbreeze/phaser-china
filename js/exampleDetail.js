@@ -12,7 +12,7 @@
 	
 	$("#editBtn").on("click", function() {
 		$this = $(this);
-		window.location.href = "example-edit-" + $this.data("id") + ".html";
+		window.open("example-edit-" + $this.data("id") + ".html", '_blank');
 	});
 	
 })(jQuery);

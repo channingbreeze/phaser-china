@@ -7,7 +7,11 @@ $exampleService = new ExampleService();
 if(isset($_GET['id'])) {
 	$id = $_GET['id'];
 	$example = $exampleService->selectExampleById($id);
+	file_put_contents("js/user/global_deps.cfg", $example[0]['js_deps']);
 	copy($example[0]['js_dir'], 'js/user/global.js');
+	$jsDeps = $example[0]['js_deps'];
+} else {
+	$jsDeps = file_get_contents("js/user/global_deps.cfg");
 }
 
 ?>
@@ -24,6 +28,14 @@ if(isset($_GET['id'])) {
 	<script src="js/lib/acelib/lib/ace/ext/emmet.js"></script>
 	<script src="js/lib/acelib/kitchen-sink/require.js"></script>
 	<script src="examples/libs/phaser.2.4.4.min.js"></script>
+	<?php 
+	if(isset($jsDeps) && !empty($jsDeps)) {
+		$deps = explode(",", $jsDeps);
+		foreach($deps as $dep) {
+			echo "<script src=\"" . $dep . "\"></script>";
+		}
+	}
+	?>
 	<script src="js/user/global.js?now=<?php echo time();?>"></script>
 </head>
 <body>
