@@ -19,6 +19,7 @@ $tutorials = $tutorialService->selectTutorialsLastN(3);
 	<link href="css/index.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
 	<script src="js/lib/unslider.js"></script>
+	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

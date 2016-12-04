@@ -25,6 +25,7 @@ $news = $newsService->selectAllNews();
 		<div class="info"><span class="author">作者：{{author}}</span><span class="date">{{gmt_create}}</span></div>
 		<div class="content">{{{content}}}</div>
     </script>
+    <?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

@@ -8,6 +8,7 @@
 	<link href="css/common.css" rel="stylesheet" />
 	<link href="css/about.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

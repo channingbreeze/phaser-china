@@ -26,6 +26,7 @@ $tutorials = $tutorialService->selectTutorialsByPage($page);
 	<link href="css/common.css" rel="stylesheet" />
 	<link href="css/tutorial.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

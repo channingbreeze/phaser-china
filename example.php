@@ -60,6 +60,7 @@ if(isset($_GET['id'])) {
     <?php 
     }
     ?>
+    <?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

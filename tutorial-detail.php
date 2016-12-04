@@ -26,6 +26,7 @@ $tutorial = $tutorial[0];
 	<link href="css/common.css" rel="stylesheet" />
 	<link href="css/tutorialDetail.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>

@@ -36,8 +36,8 @@ $exam = $exam[0];
 		}
 	}
 	?>
-	<!-- <script type="text/javascript" src="_plugins/phaser.2.4.4.particlestorm.min.js"></script> -->
 	<script src="<?php echo $exam['js_dir'];?>"></script>
+	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
 	<?php include_once 'partials/header.php'; ?>
