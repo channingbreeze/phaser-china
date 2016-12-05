@@ -1,7 +1,13 @@
+.middleDiv .source {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 80px;
+}
 .middleDiv .shows {
 	width: 100%;
 	float: left;
-	margin-top: 80px;
+	margin-top: 10px;
 	margin-bottom: 80px;
 }
 .middleDiv .shows li {

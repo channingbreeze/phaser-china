@@ -4,7 +4,7 @@
 
 <p class="title"><a href="../doc.html">Phaser</a>.Game</p>
 <p class="keywords">new Game(width, height, renderer, parent, state, transparent, antialias, physicsConfig)</p>
-<p class="indent">这里是一切魔法开始的地方。Game是你的整个游戏的核心，它管理启动、创建子系统、运行逻辑、进行渲染。</p>
+<p class="indent">Game是你的整个游戏的核心，它管理启动、创建子系统、运行逻辑、进行渲染。</p>
 <p class="subTitle">参数：</p>
 <table cellspacing="0">
 	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
@@ -66,6 +66,87 @@
 <p><span class="keywords">debug</span> : <a>Phaser.Utils.Debug</a></p>
 <p>一系列很有用的调试工具集</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-256">line 256</a><p>
+
+<p><span class="keywords">device</span> : <a>Phaser.Device</a></p>
+<p>该对象包含游戏所运行的设备信息</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-236">line 236</a><p>
+
+<p><span class="keywords">forceSingleUpdate</span> : boolean</p>
+<p>在游戏循环中是否不允许跳帧。如果不允许，将此值设置为true。在游戏运行过程中，你可以随时切换。</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-380">line 380</a><p>
+
+<p><span class="keywords">fpsProblemNotifier</span> : <a>Phaser.Signal</a></p>
+<p>如果游戏已经非常吃力，快要达不到设定的FPS了，就会发送此信号。</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-375">line 375</a><p>
+
+<p><span class="keywords">&lt;readonly&gt;height</span> : integer</p>
+<p>游戏的高度。不要直接更改此值，请使用<a>Phaser.ScaleManager#setGameSize</a>，比如<span class="params">game.scale.setGameSize(width, height)</span></p>
+<p>默认值：600</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-69">line 69</a><p>
+
+<p><span class="keywords">&lt;readonly&gt;id</span> : number</p>
+<p>游戏ID</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-31">line 31</a><p>
+
+<p><span class="keywords">input</span> : <a>Phaser.Input</a></p>
+<p>输入管理器的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-171">line 171</a><p>
+
+<p><span class="keywords">&lt;readonly&gt;isBooted</span> : boolean</p>
+<p>游戏引擎是否已经启动</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-139">line 139</a><p>
+
+<p><span class="keywords">&lt;readonly&gt;isRunning</span> : boolean</p>
+<p>游戏是否正在运行(running)，还是暂停(paused)了？</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-145">line 145</a><p>
+
+<p><span class="keywords">load</span> : <a>Phaser.Loader</a></p>
+<p>资源加载器的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-176">line 176</a><p>
+
+<p><span class="keywords">lockRender</span> : boolean</p>
+<p>如果设置此值为false(默认值)，Phaser会在每次update的时候渲染对象。如果设置为true，则渲染会被跳过。在游戏运行过程中也可以更改此值来控制游戏渲染。注意，如果设置为true，因为不会渲染，你的游戏画面将不动，所以慎用此值。</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-275">line 275</a><p>
+
+<p><span class="keywords">make</span> : <a>Phaser.GameObjectCreator</a></p>
+<p>游戏对象创建器的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-161">line 161</a><p>
+
+<p><span class="keywords">math</span> : <a>Phaser.Math</a></p>
+<p>数学计算工具的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-181">line 181</a><p>
+
+<p><span class="keywords">net</span> : <a>Phaser.Net</a></p>
+<p>网络工具的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-186">line 186</a><p>
+
+<p><span class="keywords">onBlur</span> : <a>Phaser.Signal</a></p>
+<p>游戏失去焦点的时候触发</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-311">line 311</a><p>
+
+<p><span class="keywords">onFocus</span> : <a>Phaser.Signal</a></p>
+<p>游戏获得焦点的时候触发</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-316">line 316</a><p>
+
+<p><span class="keywords">onPause</span> : <a>Phaser.Signal</a></p>
+<p>游戏暂停的时候触发</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-301">line 301</a><p>
+
+<p><span class="keywords">onResume</span> : <a>Phaser.Signal</a></p>
+<p>游戏从暂停状态恢复的时候触发</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-306">line 306</a><p>
+
+<p><span class="keywords">parent</span> : string|HTMLElement</p>
+<p>游戏的DOM父元素</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-47">line 47</a><p>
+
+<p><span class="keywords">particles</span> : <a>Phaser.Particles</a></p>
+<p>粒子系统管理器的引用</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-261">line 261</a><p>
+
+<p><span class="keywords">paused</span> : boolean</p>
+<p>游戏是否处于暂停状态。设置此值来使游戏进入暂停/恢复暂停</p>
+<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-1122">line 1122</a><p>
 
 
 
