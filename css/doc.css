@@ -84,6 +84,9 @@
 	color: #FF0000;
 	font-weight: bold;
 }
+.middleDiv .docDetailDiv table {
+	width: 100%;
+}
 .middleDiv .docDetailDiv table td,
 .middleDiv .docDetailDiv table th {
 	padding-top: 10px;
