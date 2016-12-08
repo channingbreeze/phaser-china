@@ -8,14 +8,14 @@
 <p class="subTitle">参数：</p>
 <table cellspacing="0">
 	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
-	<tr class="td"><td class="params indentS">width</td><td>数值 或 字符串</td><td>可选</td><td>800</td><td>游戏宽度。可以用0-100的字符串指定宽度为父元素的百分比。</td></tr>
-	<tr class="td"><td class="params indentS">height</td><td>数值 或 字符串</td><td>可选</td><td>600</td><td>游戏高度。可以用0-100的字符串指定高度为父元素的百分比。</td></tr>
-	<tr class="td"><td class="params indentS">renderer</td><td>枚举</td><td>可选</td><td>Phaser.AUTO</td><td>游戏渲染器。Phaser.AUTO(自动选择)，Phaser.WEBGL, Phaser.CANVAS，Phaser.HEADLESS(不渲染)。<span class="warning">手机游戏请务必指定Phaser.CANVAS</span></td></tr>
-	<tr class="td"><td class="params indentS">parent</td><td>字符串 或 HTML元素</td><td>可选</td><td>''</td><td>游戏的父DOM元素，或者DOM元素的ID</td></tr>
-	<tr class="td"><td class="params indentS">state</td><td>对象</td><td>可选</td><td>null</td><td>游戏初始场景，一个包含<a>Phaser.State</a>函数(preload, create, update, render)的对象</td></tr>
-	<tr class="td"><td class="params indentS">transparent</td><td>布尔</td><td>可选</td><td>false</td><td>是否要一个透明背景</td></tr>
-	<tr class="td"><td class="params indentS">antialias</td><td>布尔</td><td>可选</td><td>true</td><td>是否要抗锯齿效果。如果要实现像素化的复古风格游戏，可以置为false</td></tr>
-	<tr class="td"><td class="params indentS">physicsConfig</td><td>对象</td><td>可选</td><td>null</td><td>物理引擎的配置对象</td></tr>
+	<tr class="td"><td class="params indentS">width</td><td>number|string</td><td>可选</td><td>800</td><td>游戏宽度。可以用0-100的字符串指定宽度为父元素的百分比。</td></tr>
+	<tr class="td"><td class="params indentS">height</td><td>number|string</td><td>可选</td><td>600</td><td>游戏高度。可以用0-100的字符串指定高度为父元素的百分比。</td></tr>
+	<tr class="td"><td class="params indentS">renderer</td><td>number</td><td>可选</td><td>Phaser.AUTO</td><td>游戏渲染器。Phaser.AUTO(自动选择)，Phaser.WEBGL, Phaser.CANVAS，Phaser.HEADLESS(不渲染)。<span class="warning">手机游戏请务必指定Phaser.CANVAS</span></td></tr>
+	<tr class="td"><td class="params indentS">parent</td><td>string|DOM</td><td>可选</td><td>''</td><td>游戏的父DOM元素，或者DOM元素的ID</td></tr>
+	<tr class="td"><td class="params indentS">state</td><td>object</td><td>可选</td><td>null</td><td>游戏初始场景，一个包含<a>Phaser.State</a>函数(preload, create, update, render)的对象</td></tr>
+	<tr class="td"><td class="params indentS">transparent</td><td>boolean</td><td>可选</td><td>false</td><td>是否要一个透明背景</td></tr>
+	<tr class="td"><td class="params indentS">antialias</td><td>boolean</td><td>可选</td><td>true</td><td>是否要抗锯齿效果。如果要实现像素化的复古风格游戏，可以置为false</td></tr>
+	<tr class="td"><td class="params indentS">physicsConfig</td><td>object</td><td>可选</td><td>null</td><td>物理引擎的配置对象</td></tr>
 </table>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-25">line 25</a><p>
 
@@ -58,11 +58,6 @@
 <p><span class="keywords">create</span> : <a>Phaser.Create</a></p>
 <p>资源生成器</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-266">line 266</a><p>
-
-<p><span class="keywords">&lt;internal&gt;currentUpdateID</span> : integer</p>
-<p>渲染帧时候的ID，从0开始。比如第一帧是 currentUpdateID === 0 最后一帧是 currentUpdateID === updatesThisFrame</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-336">line 336</a><p>
 
 <p><span class="keywords">debug</span> : <a>Phaser.Utils.Debug</a></p>
 <p>一系列很有用的调试工具集</p>
@@ -169,16 +164,6 @@
 <p>此值决定绘制的缓存在渲染之后要不要保留。</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-108">line 108</a><p>
 
-<p><span class="keywords">&lt;internal&gt;raf</span> : <a>Phaser.RequestAnimationFrame</a></p>
-<p>用requestAnimationFrame或者setTimeout来处理游戏主循环。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-151">line 151</a><p>
-
-<p><span class="keywords">&lt;internal&gt;renderer</span> : <a>PIXI.CanvasRenderer</a>|<a>PIXI.WebGLRenderer</a></p>
-<p>PIXI渲染器。Phaser是基于PIXI引擎的。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-122">line 122</a><p>
-
 <p><span class="keywords">&lt;readonly&gt;renderType</span> : number</p>
 <p>Phaser将使用的渲染器类型。可以是Phaser.AUTO, Phaser.CANVAS 或者 Phaser.WEBGL</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-128">line 128</a><p>
@@ -228,11 +213,6 @@
 <p>tween动画管理器的引用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-211">line 211</a><p>
 
-<p><span class="keywords">&lt;internal&gt;updatesThisFrame</span> : integer</p>
-<p>渲染一帧的时候，发生的update的次数。理论上是1，除非出现跳帧和补帧。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-343">line 343</a><p>
-
 <p><span class="keywords">&lt;readonly&gt;width</span> : integer</p>
 <p>游戏的宽度。不要直接更改此值，请使用<a>Phaser.ScaleManager#setGameSize</a>，比如<span class="params">game.scale.setGameSize(width, height)</span></p>
 <p>默认值：800</p>
@@ -243,11 +223,6 @@
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-216">line 216</a><p>
 
 <p class="title">方法</p>
-
-<p><span class="keywords">&lt;internal&gt;boot()</span></p>
-<p>初始化游戏引擎的子模块，并且开始游戏。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-520">line 520</a><p>
 
 <p><span class="keywords">destroy()</span></p>
 <p>销毁整个游戏。</p>
@@ -261,87 +236,8 @@
 <p>允许单步调试。可以通过game.step()来驱动游戏运行。调用一次step，游戏循环前进一帧。这个方法在调试一些棘手的问题是非常有用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-956">line 956</a><p>
 
-<p><span class="keywords">&lt;internal&gt;focusGain(event)</span></p>
-<p>舞台获取焦点时被调用</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">event</td><td>object</td><td>获取焦点时的DOM事件。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-1100">line 1100</a><p>
-
-<p><span class="keywords">&lt;internal&gt;focusGain(event)</span></p>
-<p>舞台失去焦点时被调用</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">event</td><td>object</td><td>失去焦点时的DOM事件。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-1082">line 1082</a><p>
-
-<p><span class="keywords">&lt;internal&gt;gamePaused(event)</span></p>
-<p>游戏暂停时被调用</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">event</td><td>object</td><td>导致游戏暂停的DOM事件。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-1029">line 1029</a><p>
-
-<p><span class="keywords">&lt;internal&gt;gameResumed(event)</span></p>
-<p>游戏恢复时被调用</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">event</td><td>object</td><td>导致游戏恢复的DOM事件。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-1055">line 1055</a><p>
-
-<p><span class="keywords">&lt;internal&gt;parseConfig()</span></p>
-<p>解析游戏配置对象</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-440">line 440</a><p>
-
-<p><span class="keywords">&lt;internal&gt;setUpRenderer()</span></p>
-<p>检查设备能够使用指定的渲染器，如果不能，就替换渲染器。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-676">line 676</a><p>
-
-<p><span class="keywords">&lt;internal&gt;showDebugHeader()</span></p>
-<p>在控制台中显示Phaser版本等调试信息。</p>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-609">line 609</a><p>
-
 <p><span class="keywords">step()</span></p>
 <p>启动单步调试模式的时候，直接调用这个方法，可以让游戏前进一帧。这在调试一些棘手问题时非常有效，可以配合stepCount来查看游戏进行的步数。</p>
 <p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-982">line 982</a><p>
-
-<p><span class="keywords">&lt;internal&gt;update(time)</span></p>
-<p>游戏主循环</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">time</td><td>number</td><td>由RequestAnimationFrame提供的当前时间。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-770">line 770</a><p>
-
-<p><span class="keywords">&lt;internal&gt;updateLogic(timeStep)</span></p>
-<p>update Phaser中的所有逻辑子系统。被Game.update调用。</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">timeStep</td><td>number</td><td>由Game.update传过来的当前时间。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-876">line 876</a><p>
-
-<p><span class="keywords">&lt;internal&gt;updateRender(elapsedTime)</span></p>
-<p>渲染循环。渲染流程：首先调用State.preRender，在State.preRender中，你可以在渲染前对你的对象做最后的调整。然后通过渲染器，渲染整个对象列表，从Stage开始渲染，直到最后一个对象。然后开始渲染插件，根据插件被enable的顺序进行依次渲染。然后调用State.render，在State.render中发生的渲染将会置于顶层，覆盖之前渲染的对象。最后，插件按顺序被调用plugin.postRender。</p>
-<p>这个方法会自动被Game.update调用，我们一般不手动调用它。你可以用Game.lockRender来控制渲染，只有Game.lockRender为false的时候，Phaser才会进行渲染。</p>
-<table cellspacing="0">
-	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
-	<tr class="td"><td class="params indentS">elapsedTime</td><td>number</td><td>距上一次update的时间。</td></tr>
-</table>
-<p>这是内部值，以后可能被移除。</p>
-<p class="source indentS">源码 - <a href="../docs/src_core_Game.js.html">core/Game.js</a>, <a href="../docs/src_core_Game.js.html#sunlight-1-line-922">line 922</a><p>
 
 <?php include_once 'partials/docFoot.php'; ?>
