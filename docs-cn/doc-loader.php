@@ -194,6 +194,20 @@
 <p>返回：Phaser.Loader，加载器引用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1446">line 1446</a><p>
 
+<p><span class="keywords">audio(key, urls, autoDecode)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个音频文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getSound(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>移动端请注意：有一些设备(如ipad2,ipad mini)不能播放48000Hz的音频，会导致音频播放系统奔溃，解决方案是使用低频的音频，比如44100Hz。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>音频文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">urls</td><td>string|Array.&lt;string&gt;|Array.&lt;object&gt;</td><td></td><td></td><td>字符串，字符串数组，或者是一个对象数组，数组中的元素都是<span class="params">{uri: .., type: ..}</span>。如果是一个数组，那么第一个设备兼容的URI会被选择。比如：<span class="params">"jump.mp3"</span>，<span class="params">['jump.mp3', 'jump.ogg', 'jump.m4a']</span>或者<span class="params">[{uri: "data:&lt;opus_resource&gt;", type: 'opus'}, 'fallback.mp3']</span>。BLOB和DATA URIs只能用对象数组方式加载。</td></tr>
+	<tr class="td"><td class="params indentS">autoDecode</td><td>boolean</td><td>可选</td><td>true</td><td>使用Web Audio时，音频资源可以在加载时解码，也可以在运行时解码。因为音频文件在使用前必须先解码，如果此值为true，那么音频被加载后就会马上解码。音频解码是异步的，但是会严重耗费CPU，尤其是在移动端。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-968">line 968</a><p>
 
 
 

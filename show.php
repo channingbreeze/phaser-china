@@ -81,6 +81,39 @@
 					<div class="play">玩法：可用鼠标滑动，也可用方向键</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/candy">
+				<div class="front">
+					<img src="images/show/show7.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">怪物要糖果</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：来自老外的一个小demo</div>
+					<div class="play">玩法：鼠标点击糖果，不要点中炸弹哦！</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/stardog">
+				<div class="front">
+					<img src="images/show/show8.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">星星狗</div>
+					<div class="author">作者：fan</div>
+					<div class="desc">简介：网友fan提供的加强版接星星游戏</div>
+					<div class="play">玩法：不要碰到狗狗，吃医药包可以暴走哦！</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/run">
+				<div class="front">
+					<img src="images/show/show9.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">跑男</div>
+					<div class="author">作者：freeMan</div>
+					<div class="desc">简介：网友freeMan提供的跑男小游戏</div>
+					<div class="play">玩法：鼠标点击左右侧可以切换跑道，点击上侧可以跳起来！60秒钟，看谁分最高！</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
