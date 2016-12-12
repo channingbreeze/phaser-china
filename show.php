@@ -98,8 +98,8 @@
 				</div>
 				<div class="back">
 					<div class="name">星星狗</div>
-					<div class="author">作者：fan</div>
-					<div class="desc">简介：网友fan提供的加强版接星星游戏</div>
+					<div class="author">作者：han</div>
+					<div class="desc">简介：网友han提供的加强版接星星游戏</div>
 					<div class="play">玩法：不要碰到狗狗，吃医药包可以暴走哦！</div>
 				</div>
 			</li>
