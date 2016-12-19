@@ -37,6 +37,7 @@ $exam = $exam[0];
 	}
 	?>
 	<script src="<?php echo $exam['js_dir'];?>"></script>
+	<script src="js/handleLogin.js"></script>
 	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>

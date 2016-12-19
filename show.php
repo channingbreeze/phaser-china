@@ -8,6 +8,7 @@
 	<link href="css/common.css" rel="stylesheet" />
 	<link href="css/show.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<script src="js/handleLogin.js"></script>
 	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
@@ -112,6 +113,50 @@
 					<div class="author">作者：freeMan</div>
 					<div class="desc">简介：网友freeMan提供的跑男小游戏</div>
 					<div class="play">玩法：鼠标点击左右侧可以切换跑道，点击上侧可以跳起来！60秒钟，看谁分最高！</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/blockdown">
+				<div class="front">
+					<img src="images/show/show10.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">掉块儿</div>
+					<div class="author">作者：HaiboLee</div>
+					<div class="desc">简介：网友HaiboLee提供的掉块儿小游戏</div>
+					<div class="play">玩法：左右键控制左右，向上键可以试试，不要让方块掉出平台。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/breaklovers">
+				<div class="front">
+					<img src="images/show/show11.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">拆散小情侣</div>
+					<div class="author">作者：mcdyzg</div>
+					<div class="desc">简介：网友mcdyzg提供，适合在情人节玩</div>
+					<div class="play">玩法：疯狂点击，让小情侣变成单身狗。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/puzzle">
+				<div class="front">
+					<img src="images/show/show12.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">拼图</div>
+					<div class="author">作者：mcdyzg</div>
+					<div class="desc">简介：网友mcdyzg提供，可以用在微信运营</div>
+					<div class="play">玩法：拖拽图片交换，15秒内，完成拼图。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/hitball">
+				<div class="front">
+					<img src="images/show/show13.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">弹珠儿</div>
+					<div class="author">作者：han</div>
+					<div class="desc">简介：网友han提供，很有意思的游戏</div>
+					<div class="play">玩法：点击屏幕，去碰黄色的小球。</div>
 				</div>
 			</li>
 		</ul>

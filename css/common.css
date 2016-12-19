@@ -8,13 +8,58 @@ body {
 
 header {
 	width: 100%;
-	height: 60px;
+	height: 108px;
 	background-color: black;
+}
+
+header .mainLogin {
+	width: 100%;
+	background-color: #C52A4C;
+}
+
+header .mainLogin .loginContainer {
+	width: 1000px;
+	height: 48px;
+	margin: 0px auto;
+}
+
+header .mainLogin .loginContainer .loginTips {
+	display: inline-block;
+	margin-left: 50px;
+	line-height: 48px;
+	color: white;
+}
+
+header .mainLogin .loginContainer .loginBtn {
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+	line-height: 48px;
+}
+
+header .mainLogin .loginContainer .loginBtn a {
+	color: white;
+}
+
+header .mainLogin .loginContainer .loginBtn a img {
+	height: 30px;
+	vertical-align: middle;
+}
+
+header .mainLogin .loginContainer .userInfo {
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+	line-height: 48px;
+}
+
+header .mainLogin .loginContainer .userInfo a {
+	color: #FFF;
 }
 
 header .mainHead {
 	width: 1000px;
-	height: 100%;
+	height: 60px;
 	margin: 0px auto;
 	position: relative;
 }

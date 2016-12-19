@@ -5,7 +5,7 @@
 	</p>
 	<p>
 		Copyright <span>©</span> 2015 phaser-china.com All Rights Reserved |
-		<a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-1</a>
+		<a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-4</a>
 	</p>
 	<div class="h10"></div>
 </footer>

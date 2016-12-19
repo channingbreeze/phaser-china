@@ -41,6 +41,12 @@ a:hover {
 .h100 {
 	height: 100px;
 }
+.h50 {
+	height: 50px;
+}
+.h30 {
+	height: 30px;
+}
 .h80 {
 	height: 80px;
 }
@@ -54,4 +60,8 @@ a:hover {
 
 .hand {
 	cursor: pointer;
+}
+
+.none {
+	display: none;
 }

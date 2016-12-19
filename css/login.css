@@ -1,0 +1,89 @@
+.middleDiv .topContainer,
+.middleDiv .loginTab,
+.middleDiv .registerTab,
+.middleDiv .thirdLogin {
+	width: 600px;
+	margin: 0px auto;
+}
+
+.middleDiv .topContainer {
+	margin-top: 100px;
+	text-align: left;
+}
+.middleDiv .topContainer .tab {
+	display: inline-block;
+}
+.middleDiv .topContainer .tab .button {
+	display: inline-block;
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #C1C1C1;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.middleDiv .topContainer .tab .button.active {
+	background-color: #F3961F;
+}
+
+.middleDiv .loginTab,
+.middleDiv .registerTab {
+	background-color: #F3961F;
+}
+
+.middleDiv label {
+	display: block;
+	margin-left: 50px;
+}
+.middleDiv input {
+	width: 490px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 5px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+.middleDiv .error {
+	color: #C52A4C;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.middleDiv .buttonContainer {
+	text-align: center;
+	margin-top: 20px;
+}
+.middleDiv .buttonContainer button {
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 10px;
+	transition : all 0.2s linear 0s;
+	position: relative;
+	display: inline-block;
+}
+.middleDiv .buttonContainer button:hover {
+	background-color: #3B033B;
+}
+.middleDiv .buttonContainer button:active {
+	left: 2px;
+	top: 1px;
+}
+
+.middleDiv .thirdLogin {
+	margin-top: 10px;
+}
+.middleDiv .thirdLogin a img {
+	height: 32px;
+}
+
+

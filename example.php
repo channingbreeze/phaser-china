@@ -60,6 +60,7 @@ if(isset($_GET['id'])) {
     <?php 
     }
     ?>
+    <script src="js/handleLogin.js"></script>
     <?php include_once 'partials/statistics.php';?>
 </head>
 <body>

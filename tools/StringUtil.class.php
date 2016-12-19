@@ -17,6 +17,15 @@ class StringUtil {
 		}
 	}
 	
+	static function checkEmail($str) {
+		$pattern="/^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/i";
+		if(preg_match($pattern, $str)){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
 }
 
 ?>

@@ -37,6 +37,7 @@ if(isset($_GET['id'])) {
 	}
 	?>
 	<script src="js/user/global.js?now=<?php echo time();?>"></script>
+	<script src="js/handleLogin.js"></script>
 	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
