@@ -4,7 +4,7 @@
  * @author connect@qq.com
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
-require_once(CLASS_PATH."Oauth.class.php");
+require_once(QQ_LOGIN_CLASS_PATH."Oauth.class.php");
 
 /*
  * @brief QC类，api外部对象，调用接口全部依赖于此对象

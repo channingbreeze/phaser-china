@@ -159,6 +159,39 @@
 					<div class="play">玩法：点击屏幕，去碰黄色的小球。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/quitsmoke">
+				<div class="front">
+					<img src="images/show/show14.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">别抽烟</div>
+					<div class="author">作者：hexcola</div>
+					<div class="desc">简介：网友hexcola提供，戒烟公益游戏</div>
+					<div class="play">玩法：移动鼠标，别让球球掉下去。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/circlepath">
+				<div class="front">
+					<img src="images/show/show15.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">往上爬</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：网友ladeng666博客</div>
+					<div class="play">玩法：顺着路径往上爬。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/downfloor">
+				<div class="front">
+					<img src="images/show/show16.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">下楼</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：从老外网站扒来的</div>
+					<div class="play">玩法：找个位置放小人，不要碰到左右边。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>

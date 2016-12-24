@@ -51,6 +51,7 @@ if(isset($_SESSION['user'])) {
 		</div>
 		<div class="thirdLogin">
 			<a href="loginsdk/weibo/login.php"><img src="loginsdk/weibo/weibo_login.png" /></a>
+			<a href="loginsdk/qq/login.php"><img src="loginsdk/qq/qq_login.png" /></a>
 		</div>
 		<div class="h100"></div>
 	</div>

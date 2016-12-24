@@ -5,7 +5,7 @@
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-require_once(CLASS_PATH."ErrorCase.class.php");
+require_once(QQ_LOGIN_CLASS_PATH."ErrorCase.class.php");
 class Recorder{
     private static $data;
     private $inc;
@@ -15,9 +15,18 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        $incFileContents = file(ROOT."comm/inc.php");
-        $incFileContents = $incFileContents[1];
-        $this->inc = json_decode($incFileContents);
+        $arr = parse_ini_file ( dirname ( __FILE__ ) . "/../../../../config/env.ini" );
+        $qqAk = $arr ['qqAk'];
+        $qqSk = $arr ['qqSk'];
+        
+        $this->inc = (object)null;
+        $this->inc->appid = $qqAk;
+        $this->inc->appkey = $qqSk;
+        $this->inc->callback = 'http://www.phaser-china.com/loginsdk/qq/callback.php';
+        $this->inc->scope = 'get_user_info';
+        $this->inc->errorReport = true;
+        $this->inc->storageType = 'file';
+        
         if(empty($this->inc)){
             $this->error->showError("20001");
         }

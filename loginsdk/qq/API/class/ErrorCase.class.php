@@ -5,7 +5,7 @@
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-require_once(CLASS_PATH."Recorder.class.php");
+require_once(QQ_LOGIN_CLASS_PATH."Recorder.class.php");
 
 /*
  * @brief ErrorCase类，封闭异常

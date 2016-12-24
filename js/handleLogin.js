@@ -18,8 +18,7 @@ $(function() {
 		if(window.location.href.indexOf("login.php") == -1) {
 			document.cookie = "loginBackUrl=" + window.location.href;
 		}
-		window.alert("QQ登陆正在接入，请稍后尝试！");
-		//window.location.href = "http://www.phaser-china.com/loginsdk/qq/login.php";
+		window.location.href = "http://www.phaser-china.com/loginsdk/qq/login.php";
 	})
 	
 	$("#logoutBtn").on("click", function() {
