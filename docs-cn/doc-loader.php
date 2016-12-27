@@ -209,6 +209,41 @@
 <p>返回：Phaser.Loader，加载器引用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-968">line 968</a><p>
 
+<p><span class="keywords">audiosprite(key, urls, jsonURL, jsonData, autoDecode)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个音频精灵。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>音频精灵是音频文件和JSON配置的组合。JSON格式可以参考<a href="https://github.com/tonistiigi/audiosprite" target="_blank">https://github.com/tonistiigi/audiosprite</a></p>
+<p>可以通过<span class="params">Cache.getSoundData(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>音频精灵的键值。</td></tr>
+	<tr class="td"><td class="params indentS">urls</td><td>Array|string</td><td></td><td></td><td>可以是一个包含音频文件URL的数组，例如：<span class="params">['audiosprite.mp3', 'audiosprite.ogg', 'audiosprite.m4a']</span>，也可以是一个字符串，只表示一个音频文件的URL。</td></tr>
+	<tr class="td"><td class="params indentS">jsonURL</td><td>string</td><td>可选</td><td>null</td><td>音频精灵的JSON配置文件的URL。如果你想直接传JSON数据，把这个值设为null。</td></tr>
+	<tr class="td"><td class="params indentS">jsonData</td><td>string|object</td><td>可选</td><td>null</td><td>音频精灵的JSON配置对象。如果jsonURL不是null，那么此值会被忽略。</td></tr>
+	<tr class="td"><td class="params indentS">autoDecode</td><td>boolean</td><td>可选</td><td>true</td><td>使用Web Audio时，音频资源可以在加载时解码，也可以在运行时解码。因为音频文件在使用前必须先解码，如果此值为true，那么音频被加载后就会马上解码。音频解码是异步的，但是会严重耗费CPU，尤其是在移动端。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1011">line 1011</a><p>
+
+<p><span class="keywords">binary(key, url, callback, callbackContext)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个二进制文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getBinary(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定URL，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.bin。</p>
+<p>它会通过xhr加载，返回类型是arraybuffer。你可以在文件加载完成后设置一个回调来处理数据，回调有两个参数，文件key和文件数据。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>二进制文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>二进制文件的URL。如果是undefined或者null，URL会被设置为<span class="params">&lt;key&gt;.bin，例如：key是alien，URL就是alien.bin</span></td></tr>
+	<tr class="td"><td class="params indentS">callback</td><td>function</td><td>可选</td><td>(none)</td><td>文件加载完成后的回调函数，你可以在这里对二进制进行进一步处理。</td></tr>
+	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td></td><td>回调的上下文，如果没有指定，会用callback自己作为上下文。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-888">line 888</a><p>
+
+
 
 
 

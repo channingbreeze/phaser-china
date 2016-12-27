@@ -72,7 +72,7 @@ $exam = $exam[0];
 				$deps = explode(",", $exam['js_deps']);
 				foreach($deps as $dep) {
 					$js = explode("/", $dep);
-					$depmes = $depmes . $js[1] . " ";
+					$depmes = $depmes . "<a href='" . $dep . "' download>" . $js[1] . "</a> ";
 				}
 				$depmes = $depmes . "</p>";
 				echo $depmes;
