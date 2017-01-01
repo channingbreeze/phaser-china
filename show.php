@@ -192,6 +192,50 @@
 					<div class="play">玩法：找个位置放小人，不要碰到左右边。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/rpgdemo">
+				<div class="front">
+					<img src="images/show/show17.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">RPG小游戏</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：张有忌成长之路</div>
+					<div class="play">玩法：和村长谈话领取打狼人任务，打完狼人，会村长谈话得到铁剑，再跟愤青谈话，得到打牛怪任务，打完后他给你倚天剑，Over。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/kupao">
+				<div class="front">
+					<img src="images/show/show18.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">酷跑</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：蜘蛛侠上下跳</div>
+					<div class="play">玩法：点击屏幕，上下跳，别被淘汰。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/kite">
+				<div class="front">
+					<img src="images/show/show19.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">风筝</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：卡通的风筝游戏</div>
+					<div class="play">玩法：拖动风筝，别挂到树叶上。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/nail">
+				<div class="front">
+					<img src="images/show/show20.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">别碰钉子</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：小鸟别碰钉子</div>
+					<div class="play">玩法：点击控制小鸟，别碰钉子。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
