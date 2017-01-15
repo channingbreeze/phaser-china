@@ -236,6 +236,28 @@
 					<div class="play">玩法：点击控制小鸟，别碰钉子。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/fubag">
+				<div class="front">
+					<img src="images/show/show21.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">接福袋</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：新春送福</div>
+					<div class="play">玩法：鼠标控制小人，接福袋。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/bike">
+				<div class="front">
+					<img src="images/show/show22.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">单车骑行</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：骑自行车小游戏</div>
+					<div class="play">玩法：点击屏幕就是跳，可以二连跳。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>

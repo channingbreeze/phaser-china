@@ -243,10 +243,70 @@
 <p>返回：Phaser.Loader，加载器引用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-888">line 888</a><p>
 
+<p><span class="keywords">bitmapFont(key, textureURL, atlasURL, atlasData, xSpacing, ySpacing)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个位图字体文件。</p>
+<p>Windows下可以用<a href="http://www.angelcode.com/products/bmfont/" target="_blank">BMFont</a>(免费)，mac下可以用<a href="http://www.71squared.com/en/glyphdesigner" target="_blank">Glyph Designer</a>(商业版收费)，或者用web在线的<a href="" target="_blank">Littera</a>(免费)都可以创建位图字体。</p>
+<p>你可以通过提供一个XML文件的URL地址，从网络加载字体。或者给atlasData传一个XML对象或者字符串。如果传字符串，它会被Loader.parseXML直接解析成XML对象放入Phaser.Cache。</p>
+<p>调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getBitmapFont(key)</span>来获取文件。XML文件会在加载后自动解析，如果你需要控制XML的解析时间，你可以用Loader.text，然后自己解析XML文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定textureURL，加载器会根据key生成一个文件名。例如key是megaFont，没指定URL，加载器会把URL设置为megaFont.png。atlasURL也一样，如果没有指定atlasURL，也没有atlasData，加载器会根据key生成一个atlasURL，例如key是megaFont，则atlasURL是megaFont.xml</p>
+<p>如果你不想这样，就提供Url和data。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>位图字体文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">textureURL</td><td>string</td><td></td><td></td><td>位图字体文件的图片的URL。如果是undefined或者null，URL会被设置为<span class="params">&lt;key&gt;.png，例如：key是megaFont，URL就是megaFont.png</span></td></tr>
+	<tr class="td"><td class="params indentS">atlasURL</td><td>string</td><td></td><td></td><td>位图字体文件的描述文件的URL。如果是undefined或者null，而且atlasData也是null，URL会被设置为<span class="params">&lt;key&gt;.xml，例如：key是megaFont，URL就是megaFont.xml</span></td></tr>
+	<tr class="td"><td class="params indentS">atlasData</td><td>object</td><td>可选</td><td></td><td>位图字体描述，字符串或者XML对象。</td></tr>
+	<tr class="td"><td class="params indentS">xSpacing</td><td>number</td><td>可选</td><td>0</td><td>字母间的水平间隙。</td></tr>
+	<tr class="td"><td class="params indentS">ySpacing</td><td>number</td><td>可选</td><td>0</td><td>字母间的垂直间隙。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1263">line 1263</a><p>
+
+<p><span class="keywords">checkKeyExists(type, key)</span> : → {boolean}</p>
+<p>检查一个文件/资源是否在加载队列中。</p>
+<p>可以用Phaser.Cache来获取一个已经加载的资源，例如：<a>Phaser.Cache#checkImageKey</a></p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
+	<tr class="td"><td class="params indentS">type</td><td>string</td><td>资源类型(image, audio, xml 等)。</td></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td>资源索引(key)。</td></tr>
+</table>
+<p>返回：如果存在返回true，否则返回false。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-367">line 367</a><p>
+
+<p><span class="keywords">getAsset(type, key)</span> : → {any}</p>
+<p>获取一个文件/资源。</p>
+<p>只有在加载队列中的文件能够被找到。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
+	<tr class="td"><td class="params indentS">type</td><td>string</td><td>资源类型(image, audio, xml 等)。</td></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td>资源索引(key)。</td></tr>
+</table>
+<p>返回：如果找到，返回一个有index和file两个属性的对象，否则返回false。index会经常变化，只能在这个函数被调用后马上使用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-418">line 418</a><p>
+
+<p><span class="keywords">getAssetIndex(type, key)</span> : → {number}</p>
+<p>获取一个文件/资源在加载队列中的索引。</p>
+<p>只有在加载队列中的文件能够被找到。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="20%" class="indentS">参数名</th><th width="20%">参数类型</th><th width="60%">描述</th></tr>
+	<tr class="td"><td class="params indentS">type</td><td>string</td><td>资源类型(image, audio, xml 等)。</td></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td>资源索引(key)。</td></tr>
+</table>
+<p>返回：如果找到，返回文件/资源在加载队列中的索引，否则返回-1。index会经常变化，只能在这个函数被调用后马上使用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-418">line 418</a><p>
 
 
 
 
 
 
-<?php include_once 'partials/docFoot.php'; ?>		
+
+
+
+<?php include_once 'partials/docFoot.php'; ?>
