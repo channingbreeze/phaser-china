@@ -1,0 +1,73 @@
+.middleDiv .inputDiv {
+	width: 900px;
+	height: 50px;
+	margin: 0px auto;
+	margin-top: 100px;
+}
+.middleDiv .inputDiv input {
+	padding: 5px;
+	outline: none;
+	border: none;
+	border: 1px solid gray;
+	height: 38px;
+	width: 800px;
+	font-size: 30px;
+}
+.middleDiv .inputDiv input:focus {
+	border: 1px solid blue;
+}
+.middleDiv .inputDiv button {
+	width: 82px;
+	height: 50px;
+	vertical-align: top;
+	margin: 0px;
+	font-size: 20px;
+	border: 1px solid #666;
+	background: #666;
+	outline: none;
+	color: white;
+	position: relative;
+}
+.middleDiv .inputDiv button.enable {
+	background: #000;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.middleDiv .inputDiv button.enable:hover {
+	color: #090;
+}
+.middleDiv .inputDiv button.enable:active {
+	left: 5px;
+}
+.middleDiv .totalResult {
+	width: 900px;
+	margin: 0px auto;
+	margin-top: 30px;
+	font-size: 20px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 5px;
+}
+.middleDiv .totalResult .text {
+	color: blue;
+}
+.middleDiv .totalResult .num {
+	color: red;
+}
+.middleDiv .resultDetail {
+	width: 900px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+.middleDiv .resultDetail li.resultItem {
+	margin-top: 20px;
+}
+.middleDiv .resultDetail li.resultItem .resultTitle {
+	font-size: 20px;
+}
+.middleDiv .resultDetail li.resultItem .resultDesc {
+	margin-top: 5px;
+	text-indent: 26px;
+}
+
+
+

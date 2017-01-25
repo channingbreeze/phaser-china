@@ -25,6 +25,10 @@ if(isset($subdir)) {
 			<div class="tips">
 				如果你的英语过了四级，请看：
 				<a href="<?php echo $path;?>docs/Index.html" target="_blank">英文原版</a>
+				<span class="right searchContaier">
+					<input id="searchText" type="text" placeholder="请输入函数名" />
+					<button id="searchBtn">搜索</button>
+				</span>
 			</div>
 		</div>
 	</div>

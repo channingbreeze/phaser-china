@@ -301,8 +301,147 @@
 <p>返回：如果找到，返回文件/资源在加载队列中的索引，否则返回-1。index会经常变化，只能在这个函数被调用后马上使用。</p>
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-418">line 418</a><p>
 
+<p><span class="keywords">image(key, url, overwrite)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个图片。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>Phaser可以处理png，jpg，gif等浏览器原生支持的图片。</p>
+<p>可以通过<span class="params">Cache.getImage(key)</span>来获取图片。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.png。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>图片的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>图片的url。如果没设置，url会变成<span class="params">&lt;key&gt;.png</span>，例如key是alien，url会被设置为alien.png</td></tr>
+	<tr class="td"><td class="params indentS">overwrite</td><td>boolean</td><td>可选</td><td>false</td><td>如果一个key对应的图片已经存在，该值为true，则新图片覆盖原图片。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-670">line 670</a><p>
 
+<p><span class="keywords">images(key, urls)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一组图片。它相当于对组中每一个image调用Loader.image方法。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>Phaser可以处理png，jpg，gif等浏览器原生支持的图片。</p>
+<p>可以通过<span class="params">Cache.getImage(key)</span>来获取图片。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.png。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">keys</td><td>string</td><td></td><td></td><td>图片的键值组成的数组。</td></tr>
+	<tr class="td"><td class="params indentS">urls</td><td>string</td><td>可选</td><td></td><td>图片的url组成的数组。如果没设置，url会变成<span class="params">&lt;key&gt;.png</span>，例如key是alien，url会被设置为alien.png。如果设置，url数组长度要和key数组长度匹配。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-699">line 699</a><p>
 
+<p><span class="keywords">json(key, url, overwrite)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个JSON文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getJSON(key)</span>来获取JSON文件。JSON文件被加载后就会被解析。如果你想控制JSON的解析，就用<span class="params">Loader.text</span>来加载文件，然后自己parseJSON。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.json。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>JSON文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>JSON文件的url。如果没设置，url会变成<span class="params">&lt;key&gt;.json</span>，例如key是alien，url会被设置为alien.json</td></tr>
+	<tr class="td"><td class="params indentS">overwrite</td><td>boolean</td><td>可选</td><td>false</td><td>如果一个key对应的JSON文件已经存在，该值为true，则新文件覆盖原文件。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-771">line 771</a><p>
+
+<p><span class="keywords">pack(key, url, data, callbackContext)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个打包文件。一个打包文件是一个JSON文件，包含一系列要被加载的资源，可以查看<a href="../example-detail-363.html" target="_blank">示例</a>。打包文件会被放在队列前面。key必须唯一。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>打包文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>打包文件的url。如果想直接通过JSON对象来设定打包文件，此值传null。</td></tr>
+	<tr class="td"><td class="params indentS">data</td><td>object</td><td>可选</td><td></td><td>打包文件的JSON数据。用这个参数直接传递一个JSON对象。</td></tr>
+	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td>(loader)</td><td>一些加载资源的过程，需要给它们的回调传递上下文，例如Binary和Script。在这里传递上下文。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-590">line 590</a><p>
+
+<p><span class="keywords">physics(key, url, data, format)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个物理数据文件。数据必须是<span class="params">Lime + Corona</span>的JSON格式。<a href="https://www.codeandweb.com/">Physics Editor</a>默认可以导出这种格式。</p>
+<p>你可以从URL去加载这个文件，也可以直接传递一个JSON对象。如果你传的是一个string，会自动调用JSON.parse来解析它。</p>
+<p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getJSON(key)</span>来获取JSON文件。JSON文件被加载后就会被解析。如果你想控制JSON的解析，就用<span class="params">Loader.text</span>来加载文件，然后自己parseJSON。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.json。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>物理数据文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>物理数据文件的url。如果传null或undefined，也没有设置参数data，url会被设置为<span class="params">&lt;key&gt;.json</span>，比如，key是alien，url会被设置为alien.json。</td></tr>
+	<tr class="td"><td class="params indentS">data</td><td>object|string</td><td>可选</td><td></td><td>JSON对象，用来指定物理数据。如果设置了此值，参数url会被忽略。</td></tr>
+	<tr class="td"><td class="params indentS">format</td><td>string</td><td>可选</td><td>Phaser.Physics.LIME_CORONA_JSON</td><td>物理数据的格式。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1202">line 1202</a><p>
+
+<p><span class="keywords">script(key, url, callback, callbackContext)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个javascript文件。</p>
+<p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.js。如果你不想这样，就提供url。</p>
+<p>成功加载后，js会变成一个script标签，马上被执行，所以要小心！</p>
+<p>当script标签被创建之后，可以指定一个callback，callback要返回相关数据。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>脚本文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>脚本文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.js</span>，比如，key是alien，url会被设置为alien.js。</td></tr>
+	<tr class="td"><td class="params indentS">callback</td><td>function</td><td>可选</td><td>(none)</td><td>script标签被创建之后，可以指定一个回调函数。你可以用这招做一些额外事情。</td></tr>
+	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td>(loader)</td><td>回调函数的上下文，如果没指定，就是Phaser.Loader。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-853">line 853</a><p>
+
+<p><span class="keywords">setPreloadSprite(sprite, direction)</span></p>
+<p>把一个精灵设置为加载精灵。</p>
+<p>加载精灵会根据加载的百分比，动态裁剪自己的宽度和高度，这样做Loading进度条就很简单了。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">sprite</td><td>Phaser.Sprite|Phaser.Image</td><td></td><td></td><td>在加载时会根据进度被裁剪的精灵。</td></tr>
+	<tr class="td"><td class="params indentS">direction</td><td>number</td><td>可选</td><td>0</td><td>0--水平，1--垂直。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-315">line 315</a><p>
+
+<p><span class="keywords">shader(key, url, overwrite)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个像素shader文件。</p>
+<p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getShader(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是blur，没指定URL，加载器会把URL设置为blur.frag。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>shader文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>shader文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.frag</span>，比如，key是blur，url会被设置为blur.frag。</td></tr>
+	<tr class="td"><td class="params indentS">overwrite</td><td>boolean</td><td>可选</td><td>false</td><td>如果一个key对应的文件已经存在，该值为true，则新文件覆盖原文件。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-799">line 799</a><p>
+
+<p><span class="keywords">spritesheet(key, url, frameWidth, frameHeight, frameMax, margin, spacing)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个精灵序列文件。</p>
+<p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+TODO HERE
+<p>可以通过<span class="params">Cache.getImage(key)</span>来获取文件。精灵序列文件和其他图片一样。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.png。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>脚本文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>脚本文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.js</span>，比如，key是alien，url会被设置为alien.js。</td></tr>
+	<tr class="td"><td class="params indentS">callback</td><td>function</td><td>可选</td><td>(none)</td><td>script标签被创建之后，可以指定一个回调函数。你可以用这招做一些额外事情。</td></tr>
+	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td>(loader)</td><td>回调函数的上下文，如果没指定，就是Phaser.Loader。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-853">line 853</a><p>
 
 
 

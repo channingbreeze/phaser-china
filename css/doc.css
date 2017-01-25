@@ -9,9 +9,15 @@
 	position: relative;
 }
 .docBanner .middleDiv .tips {
+	width: 100%;
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+}
+
+.docBanner .middleDiv .tips .searchContaier {
+	position: relative;
+	right: 15px;
 }
 
 .middleDiv .docTitleDiv {
