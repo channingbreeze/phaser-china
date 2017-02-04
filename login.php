@@ -16,6 +16,7 @@ if(isset($_SESSION['user'])) {
 	<link href="css/common.css" rel="stylesheet" />
 	<link href="css/login.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<script src="js/handleLogin.js"></script>
 	<?php include_once 'partials/statistics.php';?>
 </head>
 <body>
@@ -52,6 +53,7 @@ if(isset($_SESSION['user'])) {
 		<div class="thirdLogin">
 			<a href="loginsdk/weibo/login.php"><img src="loginsdk/weibo/weibo_login.png" /></a>
 			<a href="loginsdk/qq/login.php"><img src="loginsdk/qq/qq_login.png" /></a>
+			<a href="loginsdk/github/login.php"><img src="loginsdk/github/github_login.jpg" /></a>
 		</div>
 		<div class="h100"></div>
 	</div>

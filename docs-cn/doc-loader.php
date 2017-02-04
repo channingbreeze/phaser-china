@@ -362,7 +362,7 @@
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-590">line 590</a><p>
 
 <p><span class="keywords">physics(key, url, data, format)</span> : → {<a>Phaser.Loader</a>}</p>
-<p>在加载队列中添加一个物理数据文件。数据必须是<span class="params">Lime + Corona</span>的JSON格式。<a href="https://www.codeandweb.com/">Physics Editor</a>默认可以导出这种格式。</p>
+<p>在加载队列中添加一个物理数据文件。数据必须是<span class="params">Lime + Corona</span>的JSON格式。<a href="https://www.codeandweb.com/" target="_blank">Physics Editor</a>默认可以导出这种格式。</p>
 <p>你可以从URL去加载这个文件，也可以直接传递一个JSON对象。如果你传的是一个string，会自动调用JSON.parse来解析它。</p>
 <p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
 <p>可以通过<span class="params">Cache.getJSON(key)</span>来获取JSON文件。JSON文件被加载后就会被解析。如果你想控制JSON的解析，就用<span class="params">Loader.text</span>来加载文件，然后自己parseJSON。</p>

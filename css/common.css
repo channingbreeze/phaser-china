@@ -33,8 +33,12 @@ header .mainLogin .loginContainer .loginTips {
 header .mainLogin .loginContainer .loginBtn {
 	display: inline-block;
 	float: right;
-	margin-right: 50px;
+	margin-right: 5px;
 	line-height: 48px;
+}
+
+header .mainLogin .loginContainer .loginBtn.first {
+	margin-right: 50px;
 }
 
 header .mainLogin .loginContainer .loginBtn a {

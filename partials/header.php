@@ -17,9 +17,10 @@ if(isset($subdir)) {
 			<?php } else {
 			?>
 			<div class="loginTips">登录内测(欢迎小伙伴们通过右侧登录按钮进行注册和登录)</div>
-			<div class="loginBtn"><a id="webLoginBtn" href="javascript:void(0);">登录</a></div>
+			<div class="loginBtn first"><a id="webLoginBtn" href="javascript:void(0);">登录</a></div>
 			<div class="loginBtn"><a id="weiboLoginBtn" href="javascript:void(0);"><img src="/loginsdk/weibo/weibo_login.png"/></a></div>
 			<div class="loginBtn"><a id="qqLoginBtn" href="javascript:void(0);"><img src="/loginsdk/qq/qq_login.png"/></a></div>
+			<div class="loginBtn"><a id="githubLoginBtn" href="javascript:void(0);"><img src="/loginsdk/github/github_login.jpg"/></a></div>
 			<?php } ?>
 		</div>
 	</div>
