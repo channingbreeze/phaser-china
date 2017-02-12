@@ -72,7 +72,7 @@ class TutorialService {
 	
 	public function selectTutorialsLastN($num) {
 		
-		$sql = "select * from pc_tutorial order by id desc limit 0, " . $num;
+		$sql = "select * from pc_tutorial order by tutorial_order desc limit 0, " . $num;
 		$sqlHelper = new SQLHelper();
 		$res = $sqlHelper->execute_dql_array($sql);
 		return $res;
