@@ -280,6 +280,17 @@
 					<div class="play">玩法：上下左右，空格，去消灭坦克吧。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/getcockscomb">
+				<div class="front">
+					<img src="images/show/show25.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">接鸡关</div>
+					<div class="author">作者：codingbat</div>
+					<div class="desc">简介：小海豹接鸡冠</div>
+					<div class="play">玩法：鼠标移动小海豹，接住鸡冠，躲开炸弹。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
