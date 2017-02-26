@@ -285,7 +285,7 @@
 					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show25.jpg"/>
 				</div>
 				<div class="back">
-					<div class="name">接鸡关</div>
+					<div class="name">接鸡冠</div>
 					<div class="author">作者：codingbat</div>
 					<div class="desc">简介：小海豹接鸡冠</div>
 					<div class="play">玩法：鼠标移动小海豹，接住鸡冠，躲开炸弹。</div>
