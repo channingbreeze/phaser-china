@@ -258,6 +258,28 @@
 					<div class="play">玩法：点击屏幕就是跳，可以二连跳。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/fctank">
+				<div class="front">
+					<img src="images/show/show23.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">FC坦克大战</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：仿FC坦克大战</div>
+					<div class="play">玩法：玩家1，上下左右，空格；玩家2，WSAD，J。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/tank">
+				<div class="front">
+					<img src="images/show/show24.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">坦克大战</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：坦克大战</div>
+					<div class="play">玩法：上下左右，空格，去消灭坦克吧。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>

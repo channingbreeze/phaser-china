@@ -428,20 +428,95 @@
 <p><span class="keywords">spritesheet(key, url, frameWidth, frameHeight, frameMax, margin, spacing)</span> : → {<a>Phaser.Loader</a>}</p>
 <p>在加载队列中添加一个精灵序列文件。</p>
 <p>调用这个方法之后，如果传递URL，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
-TODO HERE
+<p>专业术语解释：spritesheet是一个图片，通常包含一个动画的所有帧，这些帧有着相同的尺寸，按照顺序排列着。比如帧大小是32x32，那么在spritesheet中的每一帧，都是32x32。在Phaser之外的其他引擎里，spritesheet可能指的是atlas纹理。altas纹理就是把图片打包在一起，不管是什么尺寸的图片都可以。Texture Packer、Flash CC或者Shoebox都可以生成atlas纹理。如果你想加载atlas纹理，用<span class="params">Loader.atlas</span>。</p>
 <p>可以通过<span class="params">Cache.getImage(key)</span>来获取文件。精灵序列文件和其他图片一样。</p>
 <p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
 <p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.png。如果你不想这样，就提供url。</p>
 <p class="subTitle">参数：</p>
 <table cellspacing="0">
 	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
-	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>脚本文件的键值。</td></tr>
-	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>脚本文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.js</span>，比如，key是alien，url会被设置为alien.js。</td></tr>
-	<tr class="td"><td class="params indentS">callback</td><td>function</td><td>可选</td><td>(none)</td><td>script标签被创建之后，可以指定一个回调函数。你可以用这招做一些额外事情。</td></tr>
-	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td>(loader)</td><td>回调函数的上下文，如果没指定，就是Phaser.Loader。</td></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>spritesheet文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td></td><td></td><td>spritesheet文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.png</span>，比如，key是alien，url会被设置为alien.png。</td></tr>
+	<tr class="td"><td class="params indentS">frameWidth</td><td>number</td><td></td><td></td><td>spritesheet中一帧的宽度，像素为单位。</td></tr>
+	<tr class="td"><td class="params indentS">frameHeight</td><td>number</td><td></td><td></td><td>spritesheet中一帧的高度，像素为单位。</td></tr>
+	<tr class="td"><td class="params indentS">frameMax</td><td>number</td><td>可选</td><td>-1</td><td>spritesheet中有多少帧，如果不指定，整张图片都被当作spritesheet。</td></tr>
+	<tr class="td"><td class="params indentS">margin</td><td>number</td><td>可选</td><td>0</td><td>如果spritesheet的帧之间有margin，在这里指定。</td></tr>
+	<tr class="td"><td class="params indentS">spacing</td><td>number</td><td>可选</td><td>0</td><td>如果spritesheet的帧之间有spacing，在这里指定。</td></tr>
 </table>
 <p>返回：Phaser.Loader，加载器引用。</p>
-<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-853">line 853</a><p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-926">line 926</a><p>
+
+<p><span class="keywords">start()</span></p>
+<p>开始加载资源。通常你不需要手动调用它，StateManager会调用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1691">line 1691</a><p>
+
+<p><span class="keywords">text(key, url, overwrite)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个文本文件。</p>
+<p>调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getText(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有指定url，加载器会根据key生成一个文件名。例如key是alien，没指定URL，加载器会把URL设置为alien.txt。如果你不想这样，就提供url。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>文本文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>文本文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.txt</span>，比如，key是alien，url会被设置为alien.txt。</td></tr>
+	<tr class="td"><td class="params indentS">overwrite</td><td>boolean</td><td>可选</td><td>false</td><td>如果一个key对应的文件已经存在，该值为true，则新文件覆盖原文件。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-744">line 744</a><p>
+
+<p><span class="keywords">tilemap(key, url, data, format)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个瓦片地图。</p>
+<p>你可以通过URL来提供一个json文件，也可以通过参数data，传递一个json对象或者一个string。如果你传入string，会被直接JSON.parse，然后被加入到Phaser.Cache。</p>
+<p>如果提供的是URL，文件不会马上被加载，而是被放入加载队列。参数key要是唯一的，它会是Phaser.Cache中的键。</p>
+<p>可以通过<span class="params">Cache.getTilemapData(key)</span>来获取文件。JSON文件会被自动加载解析。如果你希望控制JSON文件的解析，那就用<span class="params">Loader.text</span>。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有传url参数，Loader会自动创建一个文件名。比如key是level1，url没传，Loader会将URL设置为level1.json。如果你把format设置为Tilemap.CSV，那url会被设置为level1.csv。如果你不希望这样，就传参数或者传json对象。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>资源索引(key)。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>瓦片地图url。如果是null，会被设置为&lt;key&gt;.json，例如key是level1，URL会被设置为level1.json</td></tr>
+	<tr class="td"><td class="params indentS">data</td><td>object|string</td><td>可选</td><td></td><td>可选的JSON对象，如果指定该值，url参数就失效。</td></tr>
+	<tr class="td"><td class="params indentS">format</td><td>number</td><td>可选</td><td>Phaser.Tilemap.CSV</td><td>数据格式。可以是 Phaser.Tilemap.CSV或者Phaser.Tilemap.TILED_JSON</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1125">line 1125</a><p>
+
+<p><span class="keywords">video(key, urls, loadEvent, asBlob)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个视频文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getVideo(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>你没有必要去预先加载一个视频文件，详情可查看<span class="params">Video.createVideoFromURL</span>。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>视频文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">urls</td><td>string|Array.&lt;string&gt;|Array.&lt;object&gt;</td><td></td><td></td><td>字符串，字符串数组，或者是一个对象数组，数组中的元素都是<span class="params">{uri: .., type: ..}</span>。如果是一个数组，那么第一个设备兼容的URI会被选择。比如：<span class="params">"boom.mp4"</span>，<span class="params">['boom.mp4', 'boom.ogg', 'boom.webm']</span>或者<span class="params">[{uri: "data:&lt;opus_resource&gt;", type: 'opus'}, 'fallback.mp4']</span>。BLOB和DATA URIs只能用对象数组方式加载。</td></tr>
+	<tr class="td"><td class="params indentS">loadEvent</td><td>string</td><td>可选</td><td>'canplaythrough'</td><td>加载视频源时，当收到loadEvent设定的事件时，认为加载结束。默认的canplaythrough事件是在视频加载得足够多，并且带宽足够大，使得视频可以被播放完整的时候触发。canplay事件是在视频加载到可以播放的时候触发，但是不一定能够播放完整。loadeddata事件仅仅保证视频的元数据和第一帧已经下载完毕。火狐默认事件是loadeddata，其他是canplaythrough。</td></tr>
+	<tr class="td"><td class="params indentS">asBlob</td><td>boolean</td><td>可选</td><td>false</td><td>视频文件可以通过video标签的src属性加载，或者通过xhr请求，作为二进制文件保存在内存中(IE9和Android2不支持)。如果你需要同时在几个精灵中播放不同的视频文件，那就用二进制的方式，设该值为true。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1071">line 1071</a><p>
+
+<p><span class="keywords">withSyncPoints(callback, callbackContext)</span> : → {<a>Phaser.Loader</a>}</p>
+<p></p>
+<p>在加载队列中添加一个视频文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getVideo(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>你没有必要去预先加载一个视频文件，详情可查看<span class="params">Video.createVideoFromURL</span>。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>视频文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">urls</td><td>string|Array.&lt;string&gt;|Array.&lt;object&gt;</td><td></td><td></td><td>字符串，字符串数组，或者是一个对象数组，数组中的元素都是<span class="params">{uri: .., type: ..}</span>。如果是一个数组，那么第一个设备兼容的URI会被选择。比如：<span class="params">"boom.mp4"</span>，<span class="params">['boom.mp4', 'boom.ogg', 'boom.webm']</span>或者<span class="params">[{uri: "data:&lt;opus_resource&gt;", type: 'opus'}, 'fallback.mp4']</span>。BLOB和DATA URIs只能用对象数组方式加载。</td></tr>
+	<tr class="td"><td class="params indentS">loadEvent</td><td>string</td><td>可选</td><td>'canplaythrough'</td><td>加载视频源时，当收到loadEvent设定的事件时，认为加载结束。默认的canplaythrough事件是在视频加载得足够多，并且带宽足够大，使得视频可以被播放完整的时候触发。canplay事件是在视频加载到可以播放的时候触发，但是不一定能够播放完整。loadeddata事件仅仅保证视频的元数据和第一帧已经下载完毕。火狐默认事件是loadeddata，其他是canplaythrough。</td></tr>
+	<tr class="td"><td class="params indentS">asBlob</td><td>boolean</td><td>可选</td><td>false</td><td>视频文件可以通过video标签的src属性加载，或者通过xhr请求，作为二进制文件保存在内存中(IE9和Android2不支持)。如果你需要同时在几个精灵中播放不同的视频文件，那就用二进制的方式，设该值为true。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1071">line 1071</a><p>
+
 
 
 
