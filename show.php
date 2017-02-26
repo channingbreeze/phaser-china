@@ -18,7 +18,7 @@
 		<ul class="shows" id="shows">
 			<li data-url="http://game.webxinxin.com/learn/exam8.html">
 				<div class="front">
-					<img src="images/show/show1.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show1.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">Phaser官方入门案例</div>
@@ -29,7 +29,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/flappybird/">
 				<div class="front">
-					<img src="images/show/show2.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show2.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">Flappybird</div>
@@ -40,7 +40,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/plane/">
 				<div class="front">
-					<img src="images/show/show3.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show3.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">打飞机</div>
@@ -51,7 +51,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/?game=weiduan&id=1">
 				<div class="front">
-					<img src="images/show/show4.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show4.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">高仿微信对话</div>
@@ -62,7 +62,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/fruit">
 				<div class="front">
-					<img src="images/show/show5.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show5.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">水果忍者</div>
@@ -73,7 +73,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/2048">
 				<div class="front">
-					<img src="images/show/show6.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show6.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">2048</div>
@@ -84,7 +84,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/candy">
 				<div class="front">
-					<img src="images/show/show7.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show7.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">怪物要糖果</div>
@@ -95,7 +95,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/stardog">
 				<div class="front">
-					<img src="images/show/show8.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show8.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">星星狗</div>
@@ -106,7 +106,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/run">
 				<div class="front">
-					<img src="images/show/show9.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show9.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">跑男</div>
@@ -117,7 +117,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/blockdown">
 				<div class="front">
-					<img src="images/show/show10.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show10.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">掉块儿</div>
@@ -128,7 +128,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/breaklovers">
 				<div class="front">
-					<img src="images/show/show11.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show11.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">拆散小情侣</div>
@@ -139,7 +139,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/puzzle">
 				<div class="front">
-					<img src="images/show/show12.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show12.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">拼图</div>
@@ -150,7 +150,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/hitball">
 				<div class="front">
-					<img src="images/show/show13.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show13.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">弹珠儿</div>
@@ -161,7 +161,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/quitsmoke">
 				<div class="front">
-					<img src="images/show/show14.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show14.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">别抽烟</div>
@@ -172,7 +172,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/circlepath">
 				<div class="front">
-					<img src="images/show/show15.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show15.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">往上爬</div>
@@ -183,7 +183,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/downfloor">
 				<div class="front">
-					<img src="images/show/show16.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show16.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">下楼</div>
@@ -194,7 +194,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/rpgdemo">
 				<div class="front">
-					<img src="images/show/show17.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show17.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">RPG小游戏</div>
@@ -205,7 +205,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/kupao">
 				<div class="front">
-					<img src="images/show/show18.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show18.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">酷跑</div>
@@ -216,7 +216,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/kite">
 				<div class="front">
-					<img src="images/show/show19.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show19.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">风筝</div>
@@ -227,7 +227,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/nail">
 				<div class="front">
-					<img src="images/show/show20.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show20.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">别碰钉子</div>
@@ -238,7 +238,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/fubag">
 				<div class="front">
-					<img src="images/show/show21.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show21.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">接福袋</div>
@@ -249,7 +249,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/bike">
 				<div class="front">
-					<img src="images/show/show22.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show22.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">单车骑行</div>
@@ -260,7 +260,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/fctank">
 				<div class="front">
-					<img src="images/show/show23.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show23.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">FC坦克大战</div>
@@ -271,7 +271,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/tank">
 				<div class="front">
-					<img src="images/show/show24.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show24.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">坦克大战</div>
@@ -282,7 +282,7 @@
 			</li>
 			<li data-url="http://game.webxinxin.com/getcockscomb">
 				<div class="front">
-					<img src="images/show/show25.jpg"/>
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show25.jpg"/>
 				</div>
 				<div class="back">
 					<div class="name">接鸡关</div>
