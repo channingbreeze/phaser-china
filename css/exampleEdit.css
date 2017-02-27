@@ -58,10 +58,4 @@
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
-	font-family: none !important;
 }
-.middleDiv .editorWrapper .editor div,
-.middleDiv .editorWrapper .editor span {
-	font-family: none !important;
-}
-
