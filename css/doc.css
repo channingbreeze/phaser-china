@@ -65,23 +65,28 @@
 .middleDiv .docDetailDiv .indentS {
 	text-indent: 5px;
 }
-.middleDiv .docDetailDiv .keywords {
+.middleDiv .docDetailDiv .keywords,
+.middleDiv .docDetailDiv h3 {
 	font-size: 17.5px;
 	line-height: 40px;
 	color: #551A99;
+	font-weight: normal;
 }
 .middleDiv .docDetailDiv .source {
 	font-weight: bold;
 	line-height: 40px;
 }
-.middleDiv .docDetailDiv .title {
+.middleDiv .docDetailDiv .title,
+.middleDiv .docDetailDiv h1 {
 	font-size: 31.5px;
 	line-height: 60px;
 	color: #551A99;
+	font-weight: normal;
 }
 .middleDiv .docDetailDiv .subTitle {
 	line-height: 40px;
 	color: #551A99;
+	font-weight: normal;
 }
 .middleDiv .docDetailDiv .params {
 	color: #DD5600;

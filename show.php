@@ -291,6 +291,50 @@
 					<div class="play">玩法：鼠标移动小海豹，接住鸡冠，躲开炸弹。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/marathon">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show26.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">社区跑</div>
+					<div class="author">作者：MicroJes</div>
+					<div class="desc">简介：一只萌恐恐在跑步</div>
+					<div class="play">玩法：看着它跑，捡箱子，然后就到终点了。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/collectstar">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show27.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">接星星</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：官方案例升级版</div>
+					<div class="play">玩法：碰到小狗掉血，捡到血包急加血，接完所有星星，再接钻石过关。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/donottapwhitetile">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show28.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">别踩白块儿</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：别踩白块儿</div>
+					<div class="play">玩法：小心不要点到白块儿，把黑块儿变绿。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/dragandmatch">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show29.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">拖一拖</div>
+					<div class="author">来自Phaser社区</div>
+					<div class="desc">简介：拖动彩色方块</div>
+					<div class="play">玩法：横竖拖动彩色方块，让横或数三个及以上相同颜色连在一起即可消除。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
