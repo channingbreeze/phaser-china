@@ -335,6 +335,17 @@
 					<div class="play">玩法：横竖拖动彩色方块，让横或数三个及以上相同颜色连在一起即可消除。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/fifty">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show30.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">看谁能坚持50秒</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力游戏</div>
+					<div class="play">玩法：拖动红色方块，不要碰到蓝色方块和边界。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
