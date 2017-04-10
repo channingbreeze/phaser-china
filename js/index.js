@@ -8,7 +8,7 @@ $(function() {
 	});
 	
 	$("#downloadExample").on('click', function() {
-		window.location.href = "inter/downloadExample.php";
+		window.location.href = "inter/download/downloadFile.php?file=example";
 	});
 	
 	$("#circles").find('li').on('click', function() {
