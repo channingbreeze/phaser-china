@@ -41,7 +41,7 @@ class TutorialService {
 		
 		$start = ($page - 1) * $this->tutorialPerPage;
 		
-		$sql = "select * from pc_tutorial limit " . $start . "," . $this->tutorialPerPage;
+		$sql = "select * from pc_tutorial order by tutorial_order desc limit " . $start . "," . $this->tutorialPerPage;
 		$res = $sqlHelper->execute_dql_array($sql);
 		
 		$arr['curPage'] = $page;
