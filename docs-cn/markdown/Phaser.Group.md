@@ -185,3 +185,73 @@ ignoreDestroy 属性设置为 true 的组，会忽略所有 destroy 方法。
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 2215](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-2215)
 
+**mask : PIXI.Graphics**
+
+为显示对象设置一个遮罩。若要移除遮罩，请将该属性设置为空。
+
+> 继承自：PIXI.DisplayObject#mask
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 282](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-282)
+
+**name : string**
+
+该组的名称，调试时有用。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 49](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-49)
+
+**onDesteoy : Phaser.Signal**
+
+该组被摧毁时，发送该信号。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 187](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-187)
+
+**\<readonly\>parent : PIXI.DisplayObjectContainer**
+
+该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。
+
+> 继承自：PIXI.DisplayObject#parent
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 79](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-79)
+
+**pendingDestroy : boolean**
+
+如果为 true ，在下次更新时，将会销毁该组。如果想要在自己的一个回调或者子元素中销毁一个组，这是非常有用的。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 119](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-119)
+
+**physycsBodyType : integer**
+
+enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Physics.ARCADE、Phaser.Physics.P2JS、Phaser.Physics.NINJA 等。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 163](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-163)
+
+**physicsSortDirection : integer**
+
+如果组里包含 Arcade 物理引擎的精灵，可以通过该属性自定义排序方向。  
+排序方向有：Phaser.Physics.Arcade.SORT_NONE、Phaser.Physics.Arcade.LEFT_RIGHT、Phaser.Physics.Arcade.RIGHT_LEFT、Phaser.Physics.Arcade.TOP_BOTTOM、Phaser.Physics.Arcade.BOTTOM_TOP。  
+如果设置为 null ，该组将默认使用 Phaser.Physics.Arcade.sortDirection。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 181](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-181)
+
+**\<readonly\>physicsType : number**
+
+对象的常量物理体类型。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 86](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-86)
+
+**pivot : Point**
+
+显示对象旋转的支点。
+
+> 继承自：PIXI.DisplayObject#pivot
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 30](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-30)
+
+**position : Point**
+
+对象相对于父元素的坐标。
+
+> 继承自：PIXI.DisplayObject#position
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 14](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-14)
+
