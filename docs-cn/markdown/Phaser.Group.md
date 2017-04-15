@@ -531,5 +531,41 @@ PIXI.DisplayObject - 被移除的子元素
 
 移除容器及其所有子元素当前舞台的引用。
 
-> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 4](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-244)
-> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 244](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-244)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 407](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-407)
+
+**setChildIndex(child, index)**
+
+更改容器中指定子元素的索引。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| child | PIXI.DisplayObject | 想要改变索引的子元素 |  
+| index | Number | 子元素的新索引 |
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 176](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-176)
+
+**setStageReference(stage)**
+
+设置容器的舞台引用。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| stage | Stage | 设置引用的舞台 |  
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 391](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-391)
+
+**swapChildren(child, child2)**
+
+交换容器中2个子元素的位置。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| child | Stage | 设置引用的舞台 |  
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 391](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-391)
