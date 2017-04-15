@@ -367,11 +367,37 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 | 参数名称 | 参数类型 | 描述 |  
 | ------ | ------ | ------ |  
-| child | PIXI.DisplayObject | 把显示对象添加到容器中 |
+| child | PIXI.DisplayObject | 被添加到容器中的子元素 |
 
 #### 返回值：
 
 PIXI.DisplayObject - 被添加到容器中的显示对象
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 91](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-91)
+
+**addChildAt(child, index) → {PIXI.DisplayObject}**
+
+向容器中的指定索引添加子元素。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| child | PIXI.DisplayObject | 被添加到容器中的子元素 |  
+| index | Number | 指定的 |
+| child | PIXI.DisplayObject | 指定的索引 
+
+#### 返回值：
+
+PIXI.DisplayObject - 被添加到容器中的显示对象
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 103](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-103)
+
+**destroy()**
+
+摧毁这个显示对象，以及所有对它的引用。
+
+> 继承自：[PIXI.DisplayObject#destroy](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#destroy)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 223](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-223)
 
