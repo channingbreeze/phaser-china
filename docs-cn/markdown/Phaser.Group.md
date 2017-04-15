@@ -66,7 +66,7 @@
 
 > 继承自：PIXI.DisplayObject#cacheAsBitmap。
 
-> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 355](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-355)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 355](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-355)
 
 **cameraOffset : Phaser.Point**
 
@@ -80,7 +80,7 @@
 
 > 继承自：PIXI.DisplayObjectContainer#children
 
-> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 17](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-17)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 17](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-17)
 
 **classType : object**
 
@@ -126,7 +126,7 @@
 
 > 继承自：PIXI.DisplayObject#filterArea
 
-> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 164](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-164)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 164](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-164)
 
 **filters : Array.\<Filter\>**
 
@@ -134,7 +134,7 @@
 
 > 继承自：PIXI.DisplayObject#filters
 
-> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 307](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-307)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 307](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-307)
 
 **fixedToCamera : boolean**
 
@@ -172,4 +172,16 @@
 > 继承自：PIXI.DisplayObject#hitArea
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 62](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-62)
+
+**ignoreDestroy : Boolean**
+
+ignoreDestroy 属性设置为 true 的组，会忽略所有 destroy 方法。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 107](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-107)
+
+**\<readonly\>length : integer**
+
+该组的子元素总数。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 2215](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-2215)
 
