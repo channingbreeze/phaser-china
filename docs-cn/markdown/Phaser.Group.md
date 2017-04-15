@@ -95,7 +95,7 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 138](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-138)
 
-**<readonly>cursorIndex : integer**
+**\<readonly\>cursorIndex : integer**
 
 组的光标的索引。可以用next使其前进。
 
