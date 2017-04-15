@@ -566,6 +566,52 @@ PIXI.DisplayObject - 被移除的子元素
 
 | 参数名称 | 参数类型 | 描述 |  
 | ------ | ------ | ------ |  
-| child | Stage | 设置引用的舞台 |  
+| child | PIXI.DisplayObject | - |  
+| child2 | PIXI.DisplayObject | - |
 
-> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 391](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-391)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 134](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-134)
+
+**toGlobal(position) → {Point}**
+
+计算显示对象的全局位置。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| position | Point | 游戏世界原点 |  
+
+#### 返回值：
+
+Point - 表示该对象的位置的点对象
+
+> 继承自：[PIXI.DisplayObject#toGlobal](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#toGlobal)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 576](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-576)
+
+**toLocal(position, from) → {Point}**
+
+计算显示对象相对于另一点的局部位置。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 是否可选 | 描述 |  
+| ------ | ------ | ------ | ------ |  
+| position | Point |  | 游戏世界原点 |  
+| from | PIXI.DisplayObject | <可选> | 用于计算全局位置的显示对象 |
+
+#### 返回值：
+
+Point - 表示该对象的位置的点对象
+
+> 继承自：[PIXI.DisplayObject#toLocal](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#toLocal)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 590](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-590)
+
+**updateCache()**
+
+生成并更新此对象的缓存精灵。
+
+> 继承自：[PIXI.DisplayObject#updateCache](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#updateCache)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 566](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-566)
