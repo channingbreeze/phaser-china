@@ -21,7 +21,7 @@
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html), [line 20](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-27)
 
 #### 继承自:
-> PIXI.DisplayObjectContainer
+> [PIXI.DisplayObjectContainer](https://www.phaser-china.com/docs/PIXI.DisplayObjectContainer.html)
 
 ## 成员
 
@@ -64,7 +64,7 @@
 
 是否把显示对象作为位图缓存。它相当于给displayObject做了一个快照，这对于一些要提高性能的复杂的displayObjects有用。要移除该属性只需将此属性设置为"null"。
 
-> 继承自：PIXI.DisplayObject#cacheAsBitmap。
+> 继承自：[PIXI.DisplayObject#cacheAsBitmap](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#cacheBitmap)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 355](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-355)
 
@@ -78,7 +78,7 @@
 
 组的子元素们。
 
-> 继承自：PIXI.DisplayObjectContainer#children
+> 继承自：[PIXI.DisplayObjectContainer#children](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#children)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 17](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-17)
 
@@ -124,7 +124,7 @@
 
 矩形过滤器，可以在每一帧设置这个矩形。
 
-> 继承自：PIXI.DisplayObject#filterArea
+> 继承自：[PIXI.DisplayObject#filterArea](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#filterArea)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 164](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-164)
 
@@ -132,7 +132,7 @@
 
 设置显示对象的过滤器。这个只能在WEBGL模式下使用。你可以将该属性设置为null来移除它。
 
-> 继承自：PIXI.DisplayObject#filters
+> 继承自：[PIXI.DisplayObject#filters](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#filters)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 307](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-307)
 
@@ -160,7 +160,7 @@
 
 显示对象容器的高度。
 
-> 继承自：PIXI.DisplayObjectContainer#height
+> 继承自：[PIXI.DisplayObjectContainer#height](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#height)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 61](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-61)
 
@@ -169,7 +169,7 @@
 这是一个定义的区域，将会接受鼠标或者触摸的事件。  
 类型：矩形|圆|椭圆|多边形
 
-> 继承自：PIXI.DisplayObject#hitArea
+> 继承自：[PIXI.DisplayObject#hitArea](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#hitArea)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 62](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-62)
 
@@ -189,7 +189,7 @@ ignoreDestroy 属性设置为 true 的组，会忽略所有 destroy 方法。
 
 为显示对象设置一个遮罩。若要移除遮罩，请将该属性设置为空。
 
-> 继承自：PIXI.DisplayObject#mask
+> 继承自：[PIXI.DisplayObject#mask](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#mask)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 282](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-282)
 
@@ -209,7 +209,7 @@ ignoreDestroy 属性设置为 true 的组，会忽略所有 destroy 方法。
 
 该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。
 
-> 继承自：PIXI.DisplayObject#parent
+> 继承自：[PIXI.DisplayObject#parent](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#parent)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 79](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-79)
 
@@ -243,7 +243,7 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 显示对象旋转的支点。
 
-> 继承自：PIXI.DisplayObject#pivot
+> 继承自：[PIXI.DisplayObject#pivot](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#pivot)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 30](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-30)
 
@@ -251,7 +251,15 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 对象相对于父元素的坐标。
 
-> 继承自：PIXI.DisplayObject#position
+> 继承自：[PIXI.DisplayObject#position](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#position)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 14](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-14)
+
+**renderable : boolean**
+
+对象是否可以渲染。
+
+> 继承自：[PIXI.DisplayObject#renderable](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#renderable)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 71](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-71)
 
