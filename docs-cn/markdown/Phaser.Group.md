@@ -494,6 +494,42 @@ Rectangle - 矩形
 
 #### 返回值：
 
-PIXI.D - 索引
+PIXI.DisplayObject - 被移除的子元素
 
-> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 159](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-159)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 211](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-211)
+
+**removeChildAt(index) → {PIXI.DisplayObject}**
+
+从容器中移除一个指定索引的子元素。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| index | Number | 指定的索引 |  
+
+#### 返回值：
+
+PIXI.DisplayObject - 被移除的子元素
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 226](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-226)
+
+**removeChildren(beginIndex, endIndex)**
+
+移除开始索引到结束索引范围内的所有子元素。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| beginIndex | Number | 开始索引，默认为0 |  
+| endIndex | Number | 结束索引，默认为容器里的子元素总数 |
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 244](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-244)
+
+**removeStageReference()**
+
+移除容器及其所有子元素当前舞台的引用。
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 4](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-244)
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 244](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-244)
