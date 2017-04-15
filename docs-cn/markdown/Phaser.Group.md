@@ -21,10 +21,35 @@
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html), [line 20](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-27)
 
 #### 继承自:
-PIXI.DisplayObjectContainer
+> PIXI.DisplayObjectContainer
 
 ## 成员
 
 **< static, constant > RETURN_CHILD : integer**
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-256)
+
+**< static, constant > RETURN_NONE : integer**
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-242)
+
+**< static, constant > RETURN_TOTAL : integer**
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-249)
+
+**< static, constant > SORT_ASCENDING : integer**
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-270)
+
+**alive : boolean**
+
+该属性对于那些是其他组孩子的组有用，在其他组使用forEachAlive是知会遍历alive为true的组。  
+默认值：true。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-93)
+
+**alpha : number**
+
+整组的透明度。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 126](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-2300)
