@@ -367,7 +367,7 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 | 参数名称 | 参数类型 | 描述 |  
 | ------ | ------ | ------ |  
-| child | PIXI.DisplayObject | 被添加到容器中的子元素 |
+| child | PIXI.DisplayObject | 需要被添加到容器中的显示对象 |
 
 #### 返回值：
 
@@ -383,7 +383,7 @@ PIXI.DisplayObject - 被添加到容器中的显示对象
 
 | 参数名称 | 参数类型 | 描述 |  
 | ------ | ------ | ------ |  
-| child | PIXI.DisplayObject | 被添加到容器中的子元素 |  
+| child | PIXI.DisplayObject | 需要被添加到容器中的显示对象 |  
 | index | Number | 指定的索引 |
 
 #### 返回值：
@@ -424,9 +424,76 @@ PIXI.Texture - 图形对象的纹理
 
 获取显示对象容器的矩形边界。
 
+#### 返回值：
+
+Rectangle - 矩形
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 307](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-307)
+
+**getChildAt(index) → {PIXI.DisplayObject}**
+
+返回指定索引的子元素。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| index | Number | 指定的索引 |  
 
 #### 返回值：
 
-PIXI.DisplayObject - 被添加到容器中的显示对象
+PIXI.DisplayObject - 根据索引找到的子元素
 
-> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 103](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-103)
+> 继承自：[PIXI.DisplayObject#generateTexture](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#generateTexture)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 194](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-194)
+
+**getChildIndex(child) → {Number}**
+
+返回子元素的索引。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| child | PIXI.DisplayObject | 需要获取索引的显示对象 |  
+
+#### 返回值：
+
+Number - 索引
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 159](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-159)
+
+**getLocalBounds() → {Rectangle}**
+
+获取显示对象容器的非局部矩形边界。
+
+#### 返回值：
+
+Rectangle - 矩形
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 367](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-367)
+
+**preUpdate()**
+
+空方法，被需要它的类重写。
+
+> 继承自：[PIXI.DisplayObject#preUpdate](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#preUpdate)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 533](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-533)
+
+**removeChild(child) → {PIXI.DisplayObject}**
+
+从容器中移除一个子元素。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| child | PIXI.DisplayObject | 需要被移除的显示对象 |  
+
+#### 返回值：
+
+PIXI.D - 索引
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 159](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-159)
