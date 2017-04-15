@@ -263,3 +263,11 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 71](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-71)
 
+**rotation :Number**
+
+   对象旋转的弧度。
+
+> 继承自：[PIXI.DisplayObject#rotation](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#rotation)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 38](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-38)
+
