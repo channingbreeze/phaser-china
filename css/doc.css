@@ -106,3 +106,35 @@
 .middleDiv .docDetailDiv table td {
 	border-top: 1px solid gray;
 }
+
+.middleDiv .markdownContainer h3 + p {
+	text-indent: 28px;
+}
+.middleDiv .markdownContainer h4 {
+	line-height: 40px;
+    color: #551A99;
+    font-weight: normal;
+}
+.middleDiv .markdownContainer table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.middleDiv .markdownContainer table th {
+	text-align: left;
+	text-indent: 5px;
+}
+.middleDiv .markdownContainer table tr td:first-child {
+	color: #DD5600;
+	text-indent: 5px;
+}
+.middleDiv .markdownContainer blockquote {
+	font-weight: bold;
+    line-height: 40px;
+	text-indent: 5px;
+}
+.middleDiv .markdownContainer p strong {
+	font-size: 17.5px;
+	line-height: 40px;
+	color: #551A99;
+	font-weight: normal;
+}

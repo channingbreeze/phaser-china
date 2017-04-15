@@ -501,26 +501,30 @@
 <p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1071">line 1071</a><p>
 
 <p><span class="keywords">withSyncPoints(callback, callbackContext)</span> : → {<a>Phaser.Loader</a>}</p>
-<p></p>
-<p>在加载队列中添加一个视频文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
-<p>可以通过<span class="params">Cache.getVideo(key)</span>来获取文件。</p>
-<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
-<p>你没有必要去预先加载一个视频文件，详情可查看<span class="params">Video.createVideoFromURL</span>。</p>
+<p>给通过回调添加的资源/文件添加一个同步点。</p>
+<p>一个同步点可以确保一个资源加载完成后，它之后的资源才开始加载。一个被标志为同步点的资源，不需要等待其他资源的加载(除非其他资源也是同步点)。一些资源，比如pack，可以在同步点前后被加载，只要它没有结束加载过程。(说实话不太懂这段，啥意思？)</p>
 <p class="subTitle">参数：</p>
 <table cellspacing="0">
 	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
-	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>视频文件的键值。</td></tr>
-	<tr class="td"><td class="params indentS">urls</td><td>string|Array.&lt;string&gt;|Array.&lt;object&gt;</td><td></td><td></td><td>字符串，字符串数组，或者是一个对象数组，数组中的元素都是<span class="params">{uri: .., type: ..}</span>。如果是一个数组，那么第一个设备兼容的URI会被选择。比如：<span class="params">"boom.mp4"</span>，<span class="params">['boom.mp4', 'boom.ogg', 'boom.webm']</span>或者<span class="params">[{uri: "data:&lt;opus_resource&gt;", type: 'opus'}, 'fallback.mp4']</span>。BLOB和DATA URIs只能用对象数组方式加载。</td></tr>
-	<tr class="td"><td class="params indentS">loadEvent</td><td>string</td><td>可选</td><td>'canplaythrough'</td><td>加载视频源时，当收到loadEvent设定的事件时，认为加载结束。默认的canplaythrough事件是在视频加载得足够多，并且带宽足够大，使得视频可以被播放完整的时候触发。canplay事件是在视频加载到可以播放的时候触发，但是不一定能够播放完整。loadeddata事件仅仅保证视频的元数据和第一帧已经下载完毕。火狐默认事件是loadeddata，其他是canplaythrough。</td></tr>
-	<tr class="td"><td class="params indentS">asBlob</td><td>boolean</td><td>可选</td><td>false</td><td>视频文件可以通过video标签的src属性加载，或者通过xhr请求，作为二进制文件保存在内存中(IE9和Android2不支持)。如果你需要同时在几个精灵中播放不同的视频文件，那就用二进制的方式，设该值为true。</td></tr>
+	<tr class="td"><td class="params indentS">callback</td><td>function</td><td></td><td></td><td>回调有一个参数：loader。</td></tr>
+	<tr class="td"><td class="params indentS">callbackContext</td><td>object</td><td>可选</td><td>loader</td><td>回调上下文</td></tr>
 </table>
 <p>返回：Phaser.Loader，加载器引用。</p>
-<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1071">line 1071</a><p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-1605">line 1605</a><p>
 
-
-
-
-
-
+<p><span class="keywords">xml(key, url, overwrite)</span> : → {<a>Phaser.Loader</a>}</p>
+<p>在加载队列中添加一个XML文件。调用这个方法之后，文件不会马上加载，只是放到了加载队列。key必须唯一。</p>
+<p>可以通过<span class="params">Cache.getXML(key)</span>来获取文件。</p>
+<p>URL可以是相对路径，也可以是绝对路径。如果是相对路径，<span class="params">Loader.baseURL</span>和<span class="params">Loader.path</span>会加在它前面。</p>
+<p>如果没有传url参数，Loader会自动创建一个文件名。比如key是alien，url没传，Loader会将URL设置为alien.xml。如果你不希望这样，就传url参数。</p>
+<p class="subTitle">参数：</p>
+<table cellspacing="0">
+	<tr align="left"><th width="12%" class="indentS">参数名</th><th width="12%">参数类型</th><th width="12%">是否可选</th><th width="12%">默认值</th><th width="42%">描述</th></tr>
+	<tr class="td"><td class="params indentS">key</td><td>string</td><td></td><td></td><td>XML文件的键值。</td></tr>
+	<tr class="td"><td class="params indentS">url</td><td>string</td><td>可选</td><td></td><td>XML文件的url。如果传null或undefined，url会被设置为<span class="params">&lt;key&gt;.xml</span>，比如，key是alien，url会被设置为alien.xml。</td></tr>
+	<tr class="td"><td class="params indentS">overwrite</td><td>boolean</td><td>可选</td><td>false</td><td>如果一个key对应的文件已经存在，该值为true，则新文件覆盖原文件。</td></tr>
+</table>
+<p>返回：Phaser.Loader，加载器引用。</p>
+<p class="source indentS">源码 - <a href="../docs/src_loader_Loader.js.html">loader/Loader.js</a>, <a href="../docs/src_loader_Loader.js.html#sunlight-1-line-826">line 826</a><p>
 
 <?php include_once 'partials/docFoot.php'; ?>

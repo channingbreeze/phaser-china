@@ -346,6 +346,17 @@
 					<div class="play">玩法：拖动红色方块，不要碰到蓝色方块和边界。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/findpath">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show31.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">自动寻路Demo</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：实现自动寻路</div>
+					<div class="play">玩法：鼠标点击地图，小人会自己走过去。</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
