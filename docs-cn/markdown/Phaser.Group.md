@@ -136,3 +136,40 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 307](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-307)
 
+**fixedToCamera : boolean**
+
+是否固定摄像机。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 203](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-203)
+
+**\<internal\>game : Phaser.Game**
+
+对当前正在运行的游戏的引用。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 38](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-38)
+
+**hash : array**
+
+哈希数组属于一个组，可以通过 Group.addToHash 和 Group.removeFromHash 添加任何子元素。  
+只有该组里的子元素，才能被从哈希数组里添加和删除。  
+哈希数组会自动使用Arcade物理引擎。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 223](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-223)
+
+**height : Number**
+
+显示对象容器的高度。
+
+> 继承自：PIXI.DisplayObjectContainer#height
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 61](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-61)
+
+**hitArea : Rectangle|Circle|EllipselPolygon**
+
+这是一个定义的区域，将会接受鼠标或者触摸的事件。  
+类型：矩形|圆|椭圆|多边形
+
+> 继承自：PIXI.DisplayObject#hitArea
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 62](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-62)
+
