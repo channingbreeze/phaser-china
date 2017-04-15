@@ -265,9 +265,33 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 **rotation :Number**
 
-   对象旋转的弧度。
+对象旋转的弧度。
 
 > 继承自：[PIXI.DisplayObject#rotation](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#rotation)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 38](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-38)
+
+**scale :Point**
+
+对象缩放的比例。
+
+> 继承自：[PIXI.DisplayObject#scale](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#scale)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 22](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-22)
+
+**\<readonly\> stage :Stage**
+
+舞台。
+
+> 继承自：[PIXI.DisplayObject#stage](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#stage)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 88](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-88)
+
+**visible :Boolean**
+
+对象的可见性。
+
+> 继承自：[PIXI.DisplayObject#visible](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#visible)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 54](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-54)
 
