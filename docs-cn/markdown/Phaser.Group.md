@@ -400,3 +400,33 @@ PIXI.DisplayObject - 被添加到容器中的显示对象
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 223](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-223)
 
+**generateTexture(resolution, scaleMode, renderer) → {PIXI.Texture}**
+
+生成一个显示对象的纹理，可以用来创建精灵。
+
+#### 参数:
+
+| 参数名称 | 参数类型 | 描述 |  
+| ------ | ------ | ------ |  
+| resolution | Number | 纹理生成的分辨率 |  
+| scaleMode | Number | 比例模式 |  
+| renderer | PIXI.CanvasRenderer \| PIXI.WebGLRenderer | 用于生成纹理的渲染器 |
+
+#### 返回值：
+
+PIXI.Texture - 图形对象的纹理
+
+> 继承自：[PIXI.DisplayObject#generateTexture](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#generateTexture)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 542](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-542)
+
+**getBounds() → {Rectangle}**
+
+获取显示对象容器的矩形边界。
+
+
+#### 返回值：
+
+PIXI.DisplayObject - 被添加到容器中的显示对象
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 103](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-103)
