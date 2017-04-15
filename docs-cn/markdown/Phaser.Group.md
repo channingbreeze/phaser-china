@@ -384,8 +384,7 @@ PIXI.DisplayObject - 被添加到容器中的显示对象
 | 参数名称 | 参数类型 | 描述 |  
 | ------ | ------ | ------ |  
 | child | PIXI.DisplayObject | 被添加到容器中的子元素 |  
-| index | Number | 指定的 |
-| child | PIXI.DisplayObject | 指定的索引 
+| index | Number | 指定的索引 |
 
 #### 返回值：
 
