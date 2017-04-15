@@ -263,7 +263,7 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 71](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-71)
 
-**rotation :Number**
+**rotation : Number**
 
 对象旋转的弧度。
 
@@ -279,7 +279,7 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 22](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-22)
 
-**\<readonly\> stage :Stage**
+**\<readonly\> stage : Stage**
 
 舞台。
 
@@ -287,11 +287,75 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 88](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-88)
 
-**visible :Boolean**
+**visible : boolean**
 
 对象的可见性。
 
 > 继承自：[PIXI.DisplayObject#visible](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#visible)
 
 > 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 54](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-54)
+
+**width :Number**
+
+显示对象容器的宽度。
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 32](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-32)
+
+**\<readonly\> worldAlpha : Number**
+
+对象的可见性。
+
+> 继承自：[PIXI.DisplayObject#worldAlpha](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#worldAlpha)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 97](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-97)
+
+**\<readonly\> worldPosition : Point**
+
+显示对象基于游戏世界变换的坐标。
+
+> 继承自：[PIXI.DisplayObject#worldPosition](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#worldPosition)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 116](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-116)
+
+**\<readonly\> worldRotation : Number**
+
+显示对象基于游戏世界变换的旋转弧度。
+
+> 继承自：[PIXI.DisplayObject#worldRotation](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#worldRotation)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 136](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-136)
+
+**\<readonly\> worldScale : Point**
+
+显示对象基于游戏世界变换的缩放比例。
+
+> 继承自：[PIXI.DisplayObject#worldScale](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#worldScale)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 126](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-126)
+
+**worldVisible : boolean**
+
+精灵是否全局可见。
+
+> 继承自：[PIXI.DisplayObject#worldVisible](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#worldScale)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 258](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-258)
+
+**x : Number**
+
+显示对象相对于父元素的x轴坐标。
+
+> 继承自：[PIXI.DisplayObject#x](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#x)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 719](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-719)
+
+**y : Number**
+
+显示对象相对于父元素的y轴坐标。
+
+> 继承自：[PIXI.DisplayObject#y](https://www.phaser-china.com/docs/PIXI.DisplayObject.html#y)
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 737](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-737)
+
+## 方法
 
