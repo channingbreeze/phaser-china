@@ -12,7 +12,7 @@
 | 参数名   | 参数类型        | 是否可选 | 默认值 |  描述  |
 | ------ | ----------- | ----------- | ----------- | ----------- |
 | game   | Phaser.Game |   |   | 对当前正在运行的游戏的引用 |
-| parent     | DisplayObject &#124; null  | 可选 | Game World | 该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。 |
+| parent     | DisplayObject \|&#124; null  | 可选 | Game World | 该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。 |
 | name | string | 可选 | “group” | 该组的名称，调试时有用 |
 | addToStage | boolean | 可选 | false | 是否把该组添加到 Game 舞台。如果要把该组添加到 Game World 舞台，可以设置为 false。  |
 | enableBody  | boolean | 可选 | false | 是否开启该组的物理系统。如果要开启组里所有子元素的物理系统，可以设置为 true。 |
