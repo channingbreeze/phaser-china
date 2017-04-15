@@ -12,7 +12,7 @@
 | 参数名   | 参数类型        | 是否可选 | 默认值 |  描述  |
 | ------ | ----------- | ----------- | ----------- | ----------- |
 | game   | Phaser.Game |   |   | 对当前正在运行的游戏的引用 |
-| parent     | DisplayObject \|&#124; null  | 可选 | Game World | 该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。 |
+| parent     | DisplayObject \| null  | 可选 | Game World | 该组将会被添加到参数指定的组或显示对象中。如果参数为 undefined 或 unspecified ，该组会被添加到 Game World 中。如果参数为 null ，该组不会被添加到任何对象中。 |
 | name | string | 可选 | “group” | 该组的名称，调试时有用 |
 | addToStage | boolean | 可选 | false | 是否把该组添加到 Game 舞台。如果要把该组添加到 Game World 舞台，可以设置为 false。  |
 | enableBody  | boolean | 可选 | false | 是否开启该组的物理系统。如果要开启组里所有子元素的物理系统，可以设置为 true。 |
@@ -74,7 +74,7 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 210](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-210)
 
-**<readonly>children : Array.<DisplayObject>**
+**\<readonly\>children : Array.\<DisplayObject\>**
 
 组的子元素们。
 
@@ -101,4 +101,38 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 193](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-193)
 
+**enableBody : boolean**
+
+打开组的物理系统。所有组中的对象都会有body属性。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 146](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-146)
+
+**enableBodyDebug : boolean**
+
+如果为true，通过enableBody打开组的物理系统的同时，会创建一个调试对象。这个只适用于 P2 物理引擎。
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 155](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-155)
+
+**exists : boolean**
+
+如果为true，则会update该组，否则跳过。  
+默认值：true
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 100](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-100)
+
+**filterArea : Rectangle**
+
+矩形过滤器，可以在每一帧设置这个矩形。
+
+> 继承自：PIXI.DisplayObject#filterArea
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 164](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-164)
+
+**filters : Array.\<Filter\>**
+
+设置显示对象的过滤器。这个只能在WEBGL模式下使用。你可以将该属性设置为null来移除它。
+
+> 继承自：PIXI.DisplayObject#filters
+
+> 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 307](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-307)
 
