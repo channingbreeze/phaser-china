@@ -359,3 +359,19 @@ enableBody 属性为 true 时，使用的物理引擎。有效值为 Phaser.Phys
 
 ## 方法
 
+**addChild(child) → {PIXI.DisplayObject}**
+
+向容器添加子元素。
+
+#### 参数:
+
+| ------ | ------ | ------ |
+| 参数名称 | 参数类型 | 描述 |
+| child | PIXI.DisplayObject | 把显示对象添加到容器中 |
+
+#### 返回值：
+
+PIXI.DisplayObject - 被添加到容器中的显示对象
+
+> 源码 - [pixi/display/DisplayObjectContainer.js](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html),[line 91](https://www.phaser-china.com/docs/src_pixi_display_DisplayObject.js.html#sunlight-1-line-91)
+
