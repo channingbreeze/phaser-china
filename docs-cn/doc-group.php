@@ -104,7 +104,16 @@
 <p>继承自：PIXI.DisplayObject#filters</p>
 <p class="source indentS">源码 - <a href="../docs/src_pixi_display_DisplayObjectContainer.js.html">pixi/display/DisplayObject.js</a>, <a href="../docs/src_pixi_display_DisplayObjectContainer.html#sunlight-1-line-307">line 307</a><p>
 
+<?php include_once 'libs/Parsedown.php';?>
 
+<div class="markdownContainer">
+<?php 
+$Parsedown = new Parsedown();
+$filePath = "./markdown/Phaser.Group.md";
+$str = file_get_contents($filePath);
+echo $Parsedown->text($str);
+?>
+</div>
 
 
 
