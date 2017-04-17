@@ -27,7 +27,7 @@ if(isset($_GET['id'])) {
 	<script src="js/lib/jquery.js"></script>
 	<script src="js/lib/acelib/lib/ace/ext/emmet.js"></script>
 	<script src="js/lib/acelib/kitchen-sink/require.js"></script>
-	<script src="examples/libs/phaser.2.4.4.min.js"></script>
+	<script src="examples/libs/phaser.min.js"></script>
 	<?php 
 	if(isset($jsDeps) && !empty($jsDeps)) {
 		$deps = explode(",", $jsDeps);
