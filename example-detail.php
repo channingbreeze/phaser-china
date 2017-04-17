@@ -27,7 +27,7 @@ $exam = $exam[0];
 	<script src="js/lib/jquery.js"></script>
 	<script src="js/lib/sunlight-min.js"></script>
 	<script src="js/lib/sunlight.javascript-min.js"></script>
-	<script src="examples/libs/phaser.2.4.4.min.js"></script>
+	<script src="examples/libs/phaser.min.js"></script>
 	<?php 
 	if(isset($exam['js_deps']) && !empty($exam['js_deps'])) {
 		$deps = explode(",", $exam['js_deps']);
