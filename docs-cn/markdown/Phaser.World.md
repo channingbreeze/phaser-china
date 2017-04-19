@@ -18,13 +18,13 @@
 
 ## 成员
 
-**\<readonly\>\_definedSize : boolean
+**\<readonly\>\_definedSize : boolean**
 
 如果为 true ，表示世界已经给出了明确定义的大小；如果为 false ，表示世界只是适配游戏的尺寸。
 
 > 源码 - [core/World.js](https://www.phaser-china.com/docs/src_core_World.js.html),[line 41](https://www.phaser-china.com/docs/src_core_World.js.html#sunlight-1-line-41)
 
-**\_height
+**\_height**
 
 属性：
 | 属性名称   | 属性类型    |  描述  |
@@ -33,7 +33,7 @@
 
 > 源码 - [core/World.js](https://www.phaser-china.com/docs/src_core_World.js.html),[line 51](https://www.phaser-china.com/docs/src_core_World.js.html#sunlight-1-line-51)
 
-**\_width
+**\_width**
 
 属性：
 | 属性名称   | 属性类型    |  描述  |
@@ -42,7 +42,7 @@
 
 > 源码 - [core/World.js](https://www.phaser-china.com/docs/src_core_World.js.html),[line 46](https://www.phaser-china.com/docs/src_core_World.js.html#sunlight-1-line-46)
 
-**alive : boolean
+**alive : boolean**
 
 该属性对于那些是其他组孩子的组有用，在其他组使用forEachAlive是知会遍历alive为true的组。
 默认值：true
@@ -51,7 +51,7 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 93](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-93)
 
-**alpha : number
+**alpha : number**
 
 整组的透明度。
 
@@ -59,7 +59,7 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 2300](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-2300)
 
-**angle : number
+**angle : number**
 
 整组旋转的角度。这对child的angle值没有影响，但是会叠加在child的旋转角度上。
 
