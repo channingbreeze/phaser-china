@@ -67,3 +67,9 @@
 
 > 源码 - [core/Group.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 2232](https://www.phaser-china.com/docs/src_core_Group.js.html#sunlight-1-line-2232)
 
+**bounds : Phaser.Rectangle**
+
+世界的界限，界限以外的对象将不再被认为处于游戏世界中。
+
+> 源码 - [core/World.js](https://www.phaser-china.com/docs/src_core_Group.js.html),[line 30](https://www.phaser-china.com/docs/src_core_World.js.html#sunlight-1-line-30)
+
