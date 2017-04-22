@@ -24,3 +24,7 @@ Change with theme as appropriate..
 dt a {
     font-weight: normal;
 }
+
+footer {
+  display: none !important;
+}
