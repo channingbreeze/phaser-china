@@ -24,8 +24,11 @@ $tutorial = $tutorial[0];
 	<meta name="Description" content="Phaser小站是一个为phaser而生的网站，以宣传和发展Phaser为使命。本站提供一切关于Phaser的案例、源码、教程、教学视频。<?php echo $tutorial['description'];?>" />
 	<link href="css/global.css" rel="stylesheet" />
 	<link href="css/common.css" rel="stylesheet" />
+	<link href="css/lib/sunlight.default.css" rel="stylesheet" />
 	<link href="css/tutorialDetail.css" rel="stylesheet" />
 	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/sunlight-min.js"></script>
+	<script src="js/lib/sunlight.javascript-min.js"></script>
 	<script src="js/handleLogin.js"></script>
 	<?php include_once 'partials/statistics.php';?>
 </head>

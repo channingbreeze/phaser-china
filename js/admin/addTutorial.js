@@ -14,6 +14,9 @@
     }
     $("#preBtn").on('click', function() {
         $("#pre").html(editor.getContent());
+        // 代码高亮
+        $(".content pre").addClass("sunlight-highlight-javascript linenums");
+    	Sunlight.highlightAll();
     });
     
     // 上传图片

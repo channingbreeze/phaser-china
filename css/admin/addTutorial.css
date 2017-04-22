@@ -44,15 +44,13 @@
 .middleDiv .content p {
 	text-indent: 32px;
 }
-.middleDiv .content pre {
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: #EDEDED;
-	border-radius: 10px;
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 14px;
-	line-height: 20px;
-	word-wrap: break-word;
-    white-space: pre-wrap;
+.middleDiv .content p img {
+	text-indent: 0px;
+}
+.middleDiv .content ul li {
+	list-style-type: circle;
+	margin-left: 32px;
+}
+.middleDiv .content ul li p {
+	text-indent: 0px;
 }

@@ -28,11 +28,14 @@ if(isset($_GET['id'])) {
 	<title>Phaser小站</title>
 	<link href="../css/global.css" rel="stylesheet" />
 	<link href="../css/common.css" rel="stylesheet" />
+	<link href="../css/lib/sunlight.default.css" rel="stylesheet" />
 	<link href="../css/admin/addTutorial.css" rel="stylesheet" />
 	<script src="../ueditor/ueditor.config.js"></script>
 	<script src="../ueditor/ueditor.all.min.js"></script>
 	<script src="../ueditor/ueditor.parse.min.js"></script>
 	<script src="../js/lib/jquery.js"></script>
+	<script src="../js/lib/sunlight-min.js"></script>
+	<script src="../js/lib/sunlight.javascript-min.js"></script>
 </head>
 <body>
 	<div class="middleDiv">
