@@ -357,6 +357,28 @@
 					<div class="play">玩法：鼠标点击地图，小人会自己走过去。</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/hearthstone">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show32.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">炉石传说</div>
+					<div class="author">作者：SangLiang</div>
+					<div class="desc">简介：炉石传说Phaser版</div>
+					<div class="play">玩法：会玩炉石传说吗？不会玩百度下</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/ballgame">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show33.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">撞球</div>
+					<div class="author">作者：咸蛋变超人</div>
+					<div class="desc">简介：超简易撞球游戏</div>
+					<div class="play">玩法：不要让黄球到自己这边</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
