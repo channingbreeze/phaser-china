@@ -46,6 +46,7 @@
 }
 .middleDiv .content p img {
 	text-indent: 0px;
+	display: inherit;
 }
 .middleDiv .content ul li {
 	list-style-type: circle;
