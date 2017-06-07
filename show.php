@@ -379,6 +379,28 @@
 					<div class="play">玩法：不要让黄球到自己这边</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/shoot">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show34.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">射击大战</div>
+					<div class="author">作者：admin</div>
+					<div class="desc">简介：简单的射击游戏</div>
+					<div class="play">玩法：点击鼠标射击，不要让敌机碰到你，还可以按空格键，表示炸弹</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/susliks">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show35.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">打地鼠</div>
+					<div class="author">作者：admin</div>
+					<div class="desc">简介：打地鼠游戏</div>
+					<div class="play">玩法：疯狂点击地鼠，看看30秒内你能打多少个</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
