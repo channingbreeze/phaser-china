@@ -401,6 +401,17 @@
 					<div class="play">玩法：疯狂点击地鼠，看看30秒内你能打多少个</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/pixelstar">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show36.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">像素接星星</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：纯像素化的游戏</div>
+					<div class="play">玩法：本游戏没有任何图片资源，接所有星星，不要碰到狗和地刺，3条命</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
