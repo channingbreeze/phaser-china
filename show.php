@@ -412,6 +412,17 @@
 					<div class="play">玩法：本游戏没有任何图片资源，接所有星星，不要碰到狗和地刺，3条命</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/memory">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show37.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">记忆翻牌游戏</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：考验记忆的小游戏</div>
+					<div class="play">玩法：翻牌，两两配对，30秒内你能完成吗？</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
