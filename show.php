@@ -423,6 +423,28 @@
 					<div class="play">玩法：翻牌，两两配对，30秒内你能完成吗？</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/tacit">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show38.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">默契</div>
+					<div class="author">作者：2017 CiGJ 2DXX团队</div>
+					<div class="desc">简介：考验默契的双人小游戏</div>
+					<div class="play">玩法：双人，一人一边，按照顺序点击按钮。PC可用QAZ和OKM键控制。</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/blindmoon">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show39.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">盲月AVG</div>
+					<div class="author">作者：随我变</div>
+					<div class="desc">简介：AVG游戏引擎</div>
+					<div class="play">玩法：按照剧情模式走吧！</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
