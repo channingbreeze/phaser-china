@@ -445,6 +445,17 @@
 					<div class="play">玩法：按照剧情模式走吧！</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/dinosaur">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show40.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">恐龙</div>
+					<div class="author">来自Phaser Editor</div>
+					<div class="desc">简介：Phaser Editor官方案例</div>
+					<div class="play">玩法：键盘控制恐龙接果实</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>

@@ -52,7 +52,7 @@ $tutorials = $tutorialService->selectTutorialsLastN(3);
 					<div class="english">Example</div>
 				</div>
 				<div class="back circle b1">
-					<p class="p1">每一个知识点一个实例</p>
+					<p class="p1">每一个概念一个实例</p>
 					<p class="p2">指哪打哪，逐个击破</p>
 					<div class="icon i1"></div>
 				</div>
