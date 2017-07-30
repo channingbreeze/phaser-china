@@ -456,6 +456,72 @@
 					<div class="play">玩法：键盘控制恐龙接果实</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/simplechess">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show41.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">简易下棋游戏</div>
+					<div class="author">来自网络</div>
+					<div class="desc">简介：简单的下棋游戏</div>
+					<div class="play">玩法：掷骰子就行了</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/pacman">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show42.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">吃豆子</div>
+					<div class="author">作者：LuisQuin</div>
+					<div class="desc">简介：小时候玩的吃豆子</div>
+					<div class="play">玩法：方向键控制小人吃完所有豆子</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/randomdungeon">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show43.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">随机生成地图示例</div>
+					<div class="author">作者：LuisQuin</div>
+					<div class="desc">简介：一个随机生成地图算法</div>
+					<div class="play">玩法：方向键控制小方块移动</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/justshoot/dist">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show44.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">燕澜七缙 - 缙者为王</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：控制射击小游戏</div>
+					<div class="play">玩法：使用虚拟手柄控制战车射击敌人</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/magicplain">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show45.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">炸弹人</div>
+					<div class="author">作者：lianera</div>
+					<div class="desc">简介：好玩的炸弹人游戏</div>
+					<div class="play">玩法：方向键移动，空格键放炸弹，放炸弹炸死敌人小怪物</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/russianblock">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show46.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">俄罗斯方块</div>
+					<div class="author">来自网络</div>
+					<div class="desc">简介：俄罗斯方块游戏</div>
+					<div class="play">玩法：方向键控制，经典俄罗斯方块</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
