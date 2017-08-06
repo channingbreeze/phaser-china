@@ -522,6 +522,39 @@
 					<div class="play">玩法：方向键控制，经典俄罗斯方块</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/starship">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show47.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">星球飞船</div>
+					<div class="author">作者：jschomay</div>
+					<div class="desc">简介：打飞船游戏</div>
+					<div class="play">玩法：鼠标控制飞船，点击鼠标左键发射子弹</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/minorminer">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show48.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">小矿工</div>
+					<div class="author">来自网络</div>
+					<div class="desc">简介：很好玩的关卡游戏</div>
+					<div class="play">玩法：按照游戏说明玩吧</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/shenjingmao">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show49.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">围住神经猫</div>
+					<div class="author">作者：xw</div>
+					<div class="desc">简介：围住神经猫phaser版</div>
+					<div class="play">玩法：点击鼠标，将神经猫围住，别让它逃出边界</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
