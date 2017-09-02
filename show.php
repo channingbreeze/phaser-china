@@ -566,6 +566,28 @@
 					<div class="play">玩法：点击屏幕，控制主角位置，一直往上跳</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/prize">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show51.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">抽奖</div>
+					<div class="author">作者：(待认领)</div>
+					<div class="desc">简介：抽奖核心逻辑</div>
+					<div class="play">玩法：点击屏幕，进行抽奖，看看你能抽到啥</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/eliminate">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show52.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">英雄消消乐</div>
+					<div class="author">作者：(待认领)</div>
+					<div class="desc">简介：消消乐新玩法</div>
+					<div class="play">玩法：让英雄捡到钥匙，再开锁出门</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
