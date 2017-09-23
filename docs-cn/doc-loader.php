@@ -2,6 +2,8 @@
 <?php $subdir=1; ?>
 <?php include_once 'partials/docHead.php'; ?>
 
+<p class="title">本篇文档翻译者：channingbreeze</p>
+
 <p class="title"><a href="../doc.html">Phaser</a>.Loader</p>
 <p class="keywords">new Loader(game)</p>
 <p class="indent">加载器加载所有外部内容，如图像、声音、纹理地图集和数据文件。</p>

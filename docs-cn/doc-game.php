@@ -2,6 +2,8 @@
 <?php $subdir=1; ?>
 <?php include_once 'partials/docHead.php'; ?>
 
+<p class="title">本篇文档翻译者：channingbreeze</p>
+
 <p class="title"><a href="../doc.html">Phaser</a>.Game</p>
 <p class="keywords">new Game(width, height, renderer, parent, state, transparent, antialias, physicsConfig)</p>
 <p class="indent">Game是你的整个游戏的核心，它管理启动、创建子系统、运行逻辑、进行渲染。</p>
