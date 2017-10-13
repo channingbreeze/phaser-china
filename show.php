@@ -14,7 +14,7 @@
 <body>
 	<?php include_once 'partials/header.php'; ?>
 	<div class="middleDiv">
-		<div class="source">以下游戏源码在：<a href="https://github.com/channingbreeze/games" target="_blank">https://github.com/channingbreeze/games</a></div>
+		<div class="source">以下游戏的素材和源码在：<a href="https://github.com/channingbreeze/games" target="_blank">https://github.com/channingbreeze/games</a></div>
 		<ul class="shows" id="shows">
 			<li data-url="http://game.webxinxin.com/learn/exam8.html">
 				<div class="front">
