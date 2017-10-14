@@ -588,6 +588,28 @@
 					<div class="play">玩法：让英雄捡到钥匙，再开锁出门</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/swordart">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show53.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">刀剑圣域</div>
+					<div class="author">作者：kobako</div>
+					<div class="desc">简介：一个RPG游戏</div>
+					<div class="play">玩法：一层一层过关就行</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/catapult">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show54.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">横版弹弓游戏</div>
+					<div class="author">作者：漫画_郎</div>
+					<div class="desc">简介：简易弹弓游戏</div>
+					<div class="play">玩法：控制弹弓打到树上</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
