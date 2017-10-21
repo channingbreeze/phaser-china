@@ -26,6 +26,11 @@ $tutorials = $tutorialService->selectTutorialsLastN(3);
 	<?php include_once 'partials/header.php'; ?>
 	<div class="banner">
 		<ul>
+			<li class="iHuizhi hand" id="gotoHuizhi">
+				<div class="inner">
+					<img src="images/banner/banner_huizhi.jpg" />
+				</div>
+			</li>
 			<li class="i1 hand" id="downloadExample">
 				<div class="inner">
 					<img src="images/banner/banner1.jpg" />

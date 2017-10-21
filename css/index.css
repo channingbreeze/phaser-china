@@ -1,6 +1,9 @@
 .banner {
 	position: relative;
 }
+.banner .iHuizhi {
+	background-color: #159588;
+}
 .banner .i1 {
 	background-color: #F3961F;
 }
