@@ -610,6 +610,17 @@
 					<div class="play">玩法：控制弹弓打到树上</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/lottery">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show55.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">飞禽走兽彩票游戏</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：一种彩票</div>
+					<div class="play">玩法：1分钟开奖一次，等着就行</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
