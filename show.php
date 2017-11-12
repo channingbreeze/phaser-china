@@ -621,6 +621,17 @@
 					<div class="play">玩法：1分钟开奖一次，等着就行</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/rhythm">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show56.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">rhythm</div>
+					<div class="author">作者：开心的小黄鳝</div>
+					<div class="desc">简介：仿节奏大师</div>
+					<div class="play">玩法：等音符掉下来就点</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
