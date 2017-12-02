@@ -3,10 +3,12 @@
     <ul>
       <li>
         <div>
-          <img src="images/advertise/humaomao.jpg">
-          <div class="backInfo" style="border: 2px solid #F45782;">
-            <span>推荐理由</span>：专业H5游戏开发，使用Phaser引擎，价格实惠，技术给力，态度热情，售后到位，还原度100%，是您做外包的不二之选，诚信推荐。
-          </div>
+          <a href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.4021e513gTnW70&id=544388852618&ns=1&abbucket=11#detail" target="_blank">
+            <img src="images/advertise/humaomao.jpg">
+            <div class="backInfo" style="border: 2px solid #F45782;">
+              <span>推荐理由</span>：专业H5游戏开发，使用Phaser引擎，价格实惠，技术给力，态度热情，售后到位，还原度100%，是您做外包的不二之选，诚信推荐。
+            </div>
+          </a>
         </div>
       </li>
       <li>
