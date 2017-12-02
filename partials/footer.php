@@ -2,6 +2,14 @@
   <div class="advertise">
     <ul>
       <li>
+        <div>
+          <img src="images/advertise/humaomao.jpg">
+          <div class="backInfo" style="border: 2px solid #F45782;">
+            <span>推荐理由</span>：专业H5游戏开发，使用Phaser引擎，价格实惠，技术给力，态度热情，售后到位，还原度100%，是您做外包的不二之选，诚信推荐。
+          </div>
+        </div>
+      </li>
+      <li>
         <a href="http://xc.hubwiz.com/course/59b1c2fcc7fd1d494539802c?affid=phaser-china" target="_blank">
           <img src="images/advertise/huizhi.jpg">
           <div class="backInfo" style="border: 2px solid #159588;">
