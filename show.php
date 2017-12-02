@@ -626,10 +626,43 @@
 					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show56.jpg"/>
 				</div>
 				<div class="back">
-					<div class="name">rhythm</div>
+					<div class="name">赝品节奏大师</div>
 					<div class="author">作者：开心的小黄鳝</div>
 					<div class="desc">简介：仿节奏大师</div>
 					<div class="play">玩法：等音符掉下来就点</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/snap">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show57.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">汽车抓拍</div>
+					<div class="author">作者：网上扒的</div>
+					<div class="desc">简介：测试你的反应能力</div>
+					<div class="play">玩法：等汽车到方框里，就马上按拍照按钮</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/charge">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show58.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">不充不行</div>
+					<div class="author">作者：网上扒的</div>
+					<div class="desc">简介：不停地充电</div>
+					<div class="play">玩法：长按充电桩，不停地给3个汽车充电，看看你能坚持多久</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/runrobot">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show59.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">机器人向前冲</div>
+					<div class="author">作者：来自github</div>
+					<div class="desc">简介：休闲游戏</div>
+					<div class="play">玩法：机器人会一直跑，点击屏幕让它跳跃</div>
 				</div>
 			</li>
 		</ul>
