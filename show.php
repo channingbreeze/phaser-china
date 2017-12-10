@@ -665,6 +665,28 @@
 					<div class="play">玩法：机器人会一直跑，点击屏幕让它跳跃</div>
 				</div>
 			</li>
+			<li data-url="http://game.webxinxin.com/allalive">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show60.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">一个都不能死</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力游戏</div>
+					<div class="play">玩法：点击上下两个区域，让小人跳跃穿过障碍</div>
+				</div>
+			</li>
+			<li data-url="http://game.webxinxin.com/skeletonguard">
+				<div class="front">
+					<img src="http://7xjv6k.com1.z0.glb.clouddn.com/show61.jpg"/>
+				</div>
+				<div class="back">
+					<div class="name">骷髅防塔</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：防塔游戏</div>
+					<div class="play">玩法：弓箭克制长枪，骑士克制弓箭，长枪克制骑兵</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<?php include_once 'partials/footer.php'; ?>
