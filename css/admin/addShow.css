@@ -1,0 +1,57 @@
+.writeShowTitle {
+	margin: 20px;
+}
+.showInfo {
+	margin-left: 20px;
+}
+.showInfo .line {
+	height: 30px;
+}
+.showInfo .line .title {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+.showInfo .line input[type="text"] {
+	width: 200px;
+}
+
+.showInfo .line input[type="file"] {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+.showInfo .line button {
+	padding: 2px;
+	margin-right: 10px;
+}
+.writeShowEditor {
+	width: 96%;
+	margin: 10px auto;
+}
+.writeShowBtn {
+	margin-left: 20px;
+	padding: 2px;
+}
+
+.middleDiv .content {
+	border-top: 1px solid gray;
+	width: 800px;
+	margin: 0px auto;
+	padding-top: 10px;
+	line-height: 30px;
+}
+.middleDiv .content p {
+	text-indent: 32px;
+}
+.middleDiv .content p img {
+	text-indent: 0px;
+	display: inherit;
+}
+.middleDiv .content ul li {
+	list-style-type: circle;
+	margin-left: 32px;
+}
+.middleDiv .content ul li p {
+	text-indent: 0px;
+}

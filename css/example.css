@@ -61,7 +61,7 @@
 	margin: 25px;
 	height: 200px;
 	float: left;
-	box-shadow: 10px 10px 20px black;
+	background: #fff;
 	position: relative;
 	overflow: hidden;
 }

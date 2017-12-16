@@ -25,6 +25,8 @@ if(!isset($_SESSION['username'])) {
 			<li><a href="tutorialManager.php">教程管理</a></li>
 			<li><a href="exampleType.php">实例类型管理</a></li>
 			<li><a href="example.php">实例管理</a></li>
+			<li><a href="addShow.php">增加展示</a></li>
+			<li><a href="showManager.php">展示管理</a></li>
 		</ul>
 	</div>
 	<script src="../js/admin/index.js"></script>

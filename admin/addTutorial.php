@@ -44,7 +44,7 @@ if(isset($_GET['id'])) {
     		<?php 
     		if($update) {
     		?>
-    		<div class="line"><span class="title">更新教程：</span><input type="hidden" name="id" value="<?php if($update) {echo $tutorial['id'];}?>" /></div>
+    		<div class="line"><span class="title">更新教程：</span><input type="hidden" name="id" value="<?php echo $tutorial['id'];?>" /><?php echo $tutorial['id'];?></div>
     		<?php 
     		} else {
     		?>
