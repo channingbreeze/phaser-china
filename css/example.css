@@ -24,12 +24,12 @@
 	position: relative;
 	border-radius: 10px;
 	text-indent: 10px;
-	background-color: black;
-	color: white;
+	background-color: #AAB9FF;
+	color: black;
 }
 .middleDiv .leftDiv ul li:hover {
 	cursor: pointer;
-	background-color: pink;
+	background-color: #90A5FF;
 	color: black;
 }
 .middleDiv .leftDiv ul li .exampleCategory {
@@ -37,16 +37,18 @@
 }
 .middleDiv .leftDiv ul li .exampleNum {
 	position: absolute;
-	right: 5px;
-	background-color: red;
+	right: 6px;
+	border: 1px solid #90A5FF;
+	background-color: #AAB9FF;
 	text-align: center;
 	text-indent: 0px;
 	border-radius: 50%;
 	display: inline-block;
-	margin-top: 5px;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
+	margin-top: 7px;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
 }
 .middleDiv .rightDiv {
 	width: 800px;
@@ -61,7 +63,7 @@
 	margin: 25px;
 	height: 200px;
 	float: left;
-	background: #fff;
+	background: #CECECE;
 	position: relative;
 	overflow: hidden;
 }
@@ -87,10 +89,9 @@
 	left: 0px;
 	width: 160px;
 	height: 110px;
-	background-color: #3B033B;
+	background-color: #CECECE;
 	font-size: 20px;
 	font-weight: bold;
-	color: white;
 	padding: 20px;
 	transition: all 0.2s linear 0s;
 }
