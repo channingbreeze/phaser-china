@@ -6,8 +6,20 @@
     	$("#pic").click();
     });
 
+    var gameUrl = "";
+
+    $("#pre").on('click', function() {
+        window.open(gameUrl);
+    })
+
     $("#preBtn").on('click', function() {
-        $("#pre").attr('src', $("#picUrl").html());
+        $("#preImg").attr("src", $("#formPic").val());
+        $("#preName").html($("#formTitle").val());
+        $("#preAuthor").html("作者：" + $("#formAuthor").val());
+        $("#preDesc").html("简介：" + $("#formDesc").val());
+        $("#prePlay").html("玩法：" + $("#formPlay").val());
+        gameUrl = $("#formGameUrl").val();
+        $("#pre").css("display", "block");
     });
     
     $("#pic").on('change', function(e) {

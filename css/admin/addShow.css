@@ -35,23 +35,52 @@
 }
 
 .middleDiv .content {
-	border-top: 1px solid gray;
-	width: 800px;
-	margin: 0px auto;
-	padding-top: 10px;
-	line-height: 30px;
+	width: 220px;
+	height: 220px;
+	margin: 15px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	display: none;
 }
-.middleDiv .content p {
-	text-indent: 32px;
+.middleDiv .content image {
+	width: 220px;
+	height: 220px;
 }
-.middleDiv .content p img {
-	text-indent: 0px;
-	display: inherit;
+.middleDiv .content .front {
+	width: 100%;
+	height: 100%;
 }
-.middleDiv .content ul li {
-	list-style-type: circle;
-	margin-left: 32px;
+.middleDiv .content .back {
+	position: absolute;
+	left: 0px;
+	top: 220px;
+	width: 200px;
+	height: 200px;
+	background-color: #FFFFFF;
+	padding: 10px;
 }
-.middleDiv .content ul li p {
-	text-indent: 0px;
+.middleDiv .content .front,
+.middleDiv .content .back {
+	transition : all 0.2s linear 0s;
+}
+.middleDiv .content:hover .front {
+	opacity: 0.0;
+}
+.middleDiv .content:hover .back {
+	top: 0px;
+}
+.middleDiv .content .back .name {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+}
+.middleDiv .content .back .author,
+.middleDiv .content .back .desc,
+.middleDiv .content .back .play {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #434343;
 }
