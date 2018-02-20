@@ -34,7 +34,7 @@ if(isset($_POST['gameUrl']) &&
 	if(!$update) {
 		$res = $showService->addShow($gameUrl, $title, $author, $description, $play, $pic, $showOrder);
 	} else {
-		$res = $showService->updateNews($id, $gameUrl, $title, $author, $description, $play, $pic, $showOrder);
+		$res = $showService->updateShow($id, $gameUrl, $title, $author, $description, $play, $pic, $showOrder);
 	}
 
 	if($res != 1) {
