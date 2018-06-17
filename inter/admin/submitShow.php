@@ -13,7 +13,8 @@ if(isset($_POST['gameUrl']) &&
 	isset($_POST['description']) &&
 	isset($_POST['play']) &&
 	isset($_POST['pic']) &&
-	isset($_POST['showOrder'])) {
+	isset($_POST['showOrder']) &&
+	isset($_POST['gameType'])) {
 	
 	$gameUrl = $_POST['gameUrl'];
 	$title = $_POST['title'];
@@ -22,6 +23,7 @@ if(isset($_POST['gameUrl']) &&
 	$play = $_POST['play'];
 	$pic = $_POST['pic'];
 	$showOrder = $_POST['showOrder'];
+	$gameType = $_POST['gameType'];
 	
 	if(isset($_POST['id'])) {
 		$update = true;
@@ -32,9 +34,9 @@ if(isset($_POST['gameUrl']) &&
 	
 	$showService = new ShowService();
 	if(!$update) {
-		$res = $showService->addShow($gameUrl, $title, $author, $description, $play, $pic, $showOrder);
+		$res = $showService->addShow($gameUrl, $title, $author, $description, $play, $pic, $showOrder, $gameType);
 	} else {
-		$res = $showService->updateShow($id, $gameUrl, $title, $author, $description, $play, $pic, $showOrder);
+		$res = $showService->updateShow($id, $gameUrl, $title, $author, $description, $play, $pic, $showOrder, $gameType);
 	}
 
 	if($res != 1) {

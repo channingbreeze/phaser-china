@@ -4,9 +4,9 @@ require_once dirname ( __FILE__ ) . '/../tools/SQLHelper.class.php';
 
 class ShowService {
 	
-	public function addShow($gameUrl, $showName, $showAuthor, $showDescription, $showPlay, $picUrl, $showOrder) {
+	public function addShow($gameUrl, $showName, $showAuthor, $showDescription, $showPlay, $picUrl, $showOrder, $gameType) {
 		
-		$sql = "insert into pc_show (gmt_create, gmt_modify, game_url, show_name, show_author, show_description, show_play, pic_url, show_order) values (now(), now(), '" . $gameUrl . "', '" . $showName . "', '" . $showAuthor . "', '" . $showDescription . "', '" . $showPlay . "', '" . $picUrl . "', " . $showOrder . ");";
+		$sql = "insert into pc_show (gmt_create, gmt_modify, game_url, show_name, show_author, show_description, show_play, pic_url, show_order, game_type) values (now(), now(), '" . $gameUrl . "', '" . $showName . "', '" . $showAuthor . "', '" . $showDescription . "', '" . $showPlay . "', '" . $picUrl . "', " . $showOrder . ", " . $gameType . ");";
 		$sqlHelper = new SQLHelper();
 		$res = $sqlHelper->execute_dqm($sql);
 		if($res == 1) {
@@ -17,9 +17,9 @@ class ShowService {
 		
 	}
 	
-	public function selectAllShows() {
+	public function selectAllShows($type) {
 		
-		$sql = "select * from pc_show order by show_order";
+		$sql = "select * from pc_show where game_type=" . $type . " order by show_order";
 		$sqlHelper = new SQLHelper();
 		$res = $sqlHelper->execute_dql_array($sql);
 		return $res;
@@ -35,9 +35,9 @@ class ShowService {
 		
 	}
 	
-	public function updateShow($id, $gameUrl, $showName, $showAuthor, $showDescription, $showPlay, $picUrl, $showOrder) {
+	public function updateShow($id, $gameUrl, $showName, $showAuthor, $showDescription, $showPlay, $picUrl, $showOrder, $gameType) {
 		
-		$sql = "update pc_show set gmt_modify=now(), game_url='" . $gameUrl . "', show_name='" . $showName . "', show_author='" . $showAuthor . "', show_description='" . $showDescription . "', show_play='" . $showPlay . "', pic_url='" . $picUrl . "', show_order=" . $showOrder . " where id=" . $id;
+		$sql = "update pc_show set gmt_modify=now(), game_url='" . $gameUrl . "', show_name='" . $showName . "', show_author='" . $showAuthor . "', show_description='" . $showDescription . "', show_play='" . $showPlay . "', pic_url='" . $picUrl . "', show_order=" . $showOrder . ", game_type=" . $gameType . " where id=" . $id;
 		
 		$sqlHelper = new SQLHelper();
 		$res = $sqlHelper->execute_dqm($sql);

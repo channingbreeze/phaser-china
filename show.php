@@ -4,7 +4,13 @@ require_once dirname ( __FILE__ ) . '/services/ShowService.class.php';
 
 $showService = new ShowService();
 
-$shows = $showService->selectAllShows();
+if(isset($_GET['type'])) {
+	$type = $_GET['type'];
+} else {
+	$type = 2;
+}
+
+$shows = $showService->selectAllShows($type);
 
 ?>
 <!DOCTYPE html>
@@ -24,6 +30,10 @@ $shows = $showService->selectAllShows();
 	<?php include_once 'partials/header.php'; ?>
 	<div class="middleDiv">
 		<div class="source">以下游戏的素材和源码在：<a href="https://github.com/channingbreeze/games" target="_blank">https://github.com/channingbreeze/games</a></div>
+		<ul class="tab">
+			<li class="tabItem <?php if($type == 2) {echo 'active';} ?>" data-type="2">Phaser2</li>
+			<li class="tabItem <?php if($type == 3) {echo 'active';} ?>" data-type="3">Phaser3</li>
+		</ul>
 		<ul class="shows" id="shows">
 			<?php
 			foreach($shows as $show) {

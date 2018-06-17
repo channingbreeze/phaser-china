@@ -53,6 +53,7 @@ if(isset($_GET['id'])) {
 		<div class="line"><span class="title">玩法：</span><input type="text" name="play" id="formPlay" value="<?php if($update) {echo $show['show_play'];}?>" /></div>
 		<div class="line"><span class="title">图片(220x220)：</span><input type="text" name="pic" id="formPic" value="<?php if($update) {echo $show['pic_url'];}?>" /></div>
 		<div class="line"><span class="title">顺序：</span><input type="text" name="showOrder" value="<?php if($update) {echo $show['show_order'];}?>" /></div>
+    <div class="line"><span class="title">phaser类型：</span><input type="text" name="gameType" value="<?php if($update) {echo $show['game_type'];}?>" /></div>
 	</form>
   <div class="showInfo">
   	<div class="line"><span class="title">图片上传：</span><input id="pic" type="file" name="pic" /><button id="uploadPic">选择图片</button><span id="picUrl"></span></div>
