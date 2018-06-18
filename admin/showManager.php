@@ -23,11 +23,11 @@ $shows = $showService->selectAllShows();
 <body>
 	<div class="middleDiv">
 		<table id="showTable" class="showTable">
-			<tr><th>ID</th><th>标题</th><th>作者</th><th>顺序</th><th>操作</th></tr>
+			<tr><th>ID</th><th>标题</th><th>作者</th><th>顺序</th><th>类型</th><th>操作</th></tr>
 			<?php 
 			foreach ($shows as $show) {
 			?>
-			<tr><td><?php echo $show['id'];?></td><td><?php echo $show['show_name'];?></td><td><?php echo $show['show_author'];?></td><td><?php echo $show['show_order'];?></td><td><a href="javascript:void(0);" data-id="<?php echo $show['id'];?>">修改</a></td></tr>
+			<tr><td><?php echo $show['id'];?></td><td><?php echo $show['show_name'];?></td><td><?php echo $show['show_author'];?></td><td><?php echo $show['show_order'];?></td><td><?php echo $show['game_type'];?></td><td><a href="javascript:void(0);" data-id="<?php echo $show['id'];?>">修改</a></td></tr>
 			<?php 
 			}
 			?>

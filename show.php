@@ -10,7 +10,7 @@ if(isset($_GET['type'])) {
 	$type = 2;
 }
 
-$shows = $showService->selectAllShows($type);
+$shows = $showService->selectShowsByType($type);
 
 ?>
 <!DOCTYPE html>

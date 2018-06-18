@@ -17,7 +17,16 @@ class ShowService {
 		
 	}
 	
-	public function selectAllShows($type) {
+	public function selectAllShows() {
+		
+		$sql = "select * from pc_show order by show_order";
+		$sqlHelper = new SQLHelper();
+		$res = $sqlHelper->execute_dql_array($sql);
+		return $res;
+		
+	}
+
+	public function selectShowsByType($type) {
 		
 		$sql = "select * from pc_show where game_type=" . $type . " order by show_order";
 		$sqlHelper = new SQLHelper();
