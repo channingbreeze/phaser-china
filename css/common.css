@@ -72,10 +72,10 @@ header .mainHead .menu {
 
 header .mainHead .menu li {
 	float: left;
-	width: 100px;
+	width: 80px;
 	height: 100%;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 15px;
+	margin-right: 15px;
 	transition : all 0.2s linear 0s;
 	border-radius: 50px;
 }
