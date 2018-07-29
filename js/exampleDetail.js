@@ -14,5 +14,10 @@
 		$this = $(this);
 		window.open("example-edit-" + $this.data("id") + ".html", '_blank');
 	});
+
+	$("#downloadBtn").on("click", function() {
+		$this = $(this);
+		window.open("inter/download/downloadExample.php?id=" + $this.data("id"), '_blank');
+	});
 	
 })(jQuery);
