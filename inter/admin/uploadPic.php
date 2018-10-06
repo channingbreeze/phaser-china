@@ -24,7 +24,7 @@ if(isset($_FILES['pic'])) {
 			$host = "http://localhost/phaser-china/uploads/";
 		} else {
 			$fileUploader->uploadFile($fileName, $filePath);
-			$host = "http://7xjv6k.com1.z0.glb.clouddn.com/";
+			$host = "http://qiniu.webxinxin.com/";
 		}
 		$url = $host . $fileName;
 		$sqlHelper = new SQLHelper();

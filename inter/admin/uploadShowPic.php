@@ -21,7 +21,7 @@ if(isset($_FILES['pic'])) {
 			$host = "http://host.phaser-china.com/images/show/";
 		} else {
 			$fileUploader->uploadFile($fileName, $filePath);
-			$host = "http://7xjv6k.com1.z0.glb.clouddn.com/";
+			$host = "http://qiniu.webxinxin.com/";
 		}
 		$url = $host . $fileName;
 		echo $url;
