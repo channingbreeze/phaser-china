@@ -34,9 +34,8 @@
 	<p>联系人：李先生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话：13581641192&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子邮件：channingbreeze@163.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ：396417401&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信号：xin874058</p>
 	<p>
 		友情链接：
-    <a href="http://club.phaser-china.com" target="_blank">Phaser小站论坛</a>&nbsp;&nbsp;&nbsp;
-    <a href="http://xc.hubwiz.com/course/59b1c2fcc7fd1d494539802c?affid=phaser-china" target="_blank">汇智网-Phaser入门教程</a>&nbsp;&nbsp;&nbsp;
     <a href="http://www.mqant.com" target="_blank">mqant-高性能实时后端游戏框架</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://blog.xiiigame.com/" target="_blank">嬉戏实验室</a>&nbsp;&nbsp;&nbsp;
     <a href="http://4399.io/" target="_blank">4399.io</a>&nbsp;&nbsp;&nbsp;
     <a href="http://topgameshow.com/" target="_blank">淘朴游戏网</a>&nbsp;&nbsp;&nbsp;
     <a href="http://www.calfnote.com" target="_blank">玩命牛的成长记录</a>&nbsp;&nbsp;&nbsp;
