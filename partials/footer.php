@@ -44,7 +44,7 @@
 	</p>
 	<p>
 		Copyright <span>©</span> 2015-2017 phaser-china.com All Rights Reserved |
-		<a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-4</a>
+		<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-4</a>
 	</p>
 	<div class="h10"></div>
 </footer>
